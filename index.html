@@ -967,17 +967,6 @@ li{margin-bottom:9px}
     залежать від того, як учень навчається, тому в регресії відбирають внесок у справжніх
     причин і роблять коефіцієнти зміщеними. Що саме прибрано й що буває, коли їх повернути, —
     у врізці нижче.</p>
-    <p>Перед тим — контекст, без якого коефіцієнти легко переоцінити. Одна лише відповідь на
-    питання «у якій зі 100 шкіл учиться дитина» пояснює більше, ніж усі виміряні
-    характеристики учнів разом узяті, — і в 14 разів більше, ніж матеріальні ресурси
-    родини.</p>
-  </div>
-
-  <div class="tablewrap" style="max-width:900px">
-    <table>
-      <thead><tr><th>Що враховуємо</th><th class="num">Пояснений розкид балів</th></tr></thead>
-      <tbody id="tbl-r2"></tbody>
-    </table>
   </div>
 
   <figure>
@@ -1777,21 +1766,6 @@ coefTable("tbl-coefFull", D["06_regression"].model_full);
       b.append(tr);
     });
   });
-})();
-
-(function r2blocks() {
-  const b = document.getElementById("tbl-r2");
-  for (const [k, v] of Object.entries(D["06_regression"].r2_blocks)) {
-    const tr = document.createElement("tr");
-    const bar = document.createElement("td");
-    bar.className = "num";
-    bar.innerHTML = `<span style="display:inline-flex;align-items:center;gap:10px;justify-content:flex-end">
-      <span style="display:inline-block;width:${Math.round(v * 190)}px;height:9px;border-radius:2px;
-        background:var(${k.startsWith("Лише школа") ? "--s2" : "--s1"})"></span>
-      <span style="min-width:44px;text-align:right">${Math.round(v * 100)} %</span></span>`;
-    tr.append(td(k), bar);
-    b.append(tr);
-  }
 })();
 
 (function alphas() {
