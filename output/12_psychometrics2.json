@@ -171,6 +171,11 @@
     "monotone_steps": 81,
     "n_steps": 81,
     "r_pearson_raw": 0.9955,
-    "r_pearson_pct": 0.9955
+    "r_pearson_pct": 0.9955,
+    "step5": {
+      "15": 42,
+      "50": 26,
+      "85": 54
+    }
   }
 }

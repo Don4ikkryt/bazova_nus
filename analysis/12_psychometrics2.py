@@ -145,6 +145,14 @@ sufficiency = {
     "r_pearson_pct": round(float(np.corrcoef(st.pct_total, st.score_total)[0, 1]), 4),
 }
 
+# скільки балів шкали додають 5 правильних відповідей у різних місцях шкали:
+# посередині крок найменший, до обох країв росте (звідси «інтервальна, а не порядкова»)
+gs = st.groupby("raw_total")["score_total"].first().sort_index()
+def _score_at(r):
+    return float(np.interp(r, gs.index.values, gs.values))
+sufficiency["step5"] = {str(r): round(_score_at(r + 5) - _score_at(r))
+                        for r in (15, 50, 85)}
+
 out = {"dimensionality": dims, "local_dependence": local, "precision": precision,
        "alpha_context": alpha_len, "trimming": trim, "sufficiency": sufficiency}
 (OUT / "12_psychometrics2.json").write_text(json.dumps(out, ensure_ascii=False, indent=2))
