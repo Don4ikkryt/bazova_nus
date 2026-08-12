@@ -1,0 +1,1828 @@
+{
+  "scales": {
+    "total": {
+      "label": "Загальна",
+      "n_items": 103,
+      "alpha": 0.935,
+      "reliability_wle": 0.932,
+      "sigma_population": 0.86,
+      "mean_pct": 52.54,
+      "sd_theta": 0.89,
+      "mean_se": 0.231,
+      "em_iterations": 8
+    },
+    "d1": {
+      "label": "Мовно-літературна",
+      "n_items": 33,
+      "alpha": 0.748,
+      "reliability_wle": 0.738,
+      "sigma_population": 0.704,
+      "mean_pct": 47.74,
+      "sd_theta": 0.811,
+      "mean_se": 0.414,
+      "em_iterations": 18
+    },
+    "d2": {
+      "label": "Математична",
+      "n_items": 21,
+      "alpha": 0.744,
+      "reliability_wle": 0.724,
+      "sigma_population": 0.852,
+      "mean_pct": 54.5,
+      "sd_theta": 1.001,
+      "mean_se": 0.519,
+      "em_iterations": 19
+    },
+    "d3": {
+      "label": "Природнича",
+      "n_items": 25,
+      "alpha": 0.852,
+      "reliability_wle": 0.823,
+      "sigma_population": 1.113,
+      "mean_pct": 54.47,
+      "sd_theta": 1.228,
+      "mean_se": 0.496,
+      "em_iterations": 15
+    },
+    "d4": {
+      "label": "Громадянсько-історична",
+      "n_items": 24,
+      "alpha": 0.882,
+      "reliability_wle": 0.845,
+      "sigma_population": 1.332,
+      "mean_pct": 55.43,
+      "sd_theta": 1.402,
+      "mean_se": 0.536,
+      "em_iterations": 16
+    }
+  },
+  "items": [
+    {
+      "item": "1.01_R216Q03T_01",
+      "domain": "Мовно-літературна",
+      "task": "1.01_R216Q03T",
+      "p_value": 0.03,
+      "difficulty_b": 3.909,
+      "point_biserial": -0.019,
+      "infit": 1.036,
+      "outfit": 2.216
+    },
+    {
+      "item": "1.01_R216Q03T_02",
+      "domain": "Мовно-літературна",
+      "task": "1.01_R216Q03T",
+      "p_value": 0.057,
+      "difficulty_b": 3.22,
+      "point_biserial": -0.107,
+      "infit": 1.129,
+      "outfit": 2.766
+    },
+    {
+      "item": "1.01_R216Q03T_03",
+      "domain": "Мовно-літературна",
+      "task": "1.01_R216Q03T",
+      "p_value": 0.031,
+      "difficulty_b": 3.885,
+      "point_biserial": -0.064,
+      "infit": 1.053,
+      "outfit": 2.52
+    },
+    {
+      "item": "1.01_R216Q03T_04",
+      "domain": "Мовно-літературна",
+      "task": "1.01_R216Q03T",
+      "p_value": 0.041,
+      "difficulty_b": 3.591,
+      "point_biserial": -0.076,
+      "infit": 1.086,
+      "outfit": 2.403
+    },
+    {
+      "item": "1.02_R216Q07N",
+      "domain": "Мовно-літературна",
+      "task": "1.02_R216Q07N",
+      "p_value": 0.641,
+      "difficulty_b": -0.602,
+      "point_biserial": 0.344,
+      "infit": 0.991,
+      "outfit": 0.986
+    },
+    {
+      "item": "1.03_R216Q08N",
+      "domain": "Мовно-літературна",
+      "task": "1.03_R216Q08N",
+      "p_value": 0.738,
+      "difficulty_b": -1.113,
+      "point_biserial": 0.291,
+      "infit": 1.007,
+      "outfit": 0.993
+    },
+    {
+      "item": "1.04_R216Q01O",
+      "domain": "Мовно-літературна",
+      "task": "1.04_R216Q01O",
+      "p_value": 0.69,
+      "difficulty_b": -0.852,
+      "point_biserial": 0.288,
+      "infit": 1.015,
+      "outfit": 1.084
+    },
+    {
+      "item": "1.05_R216Q02T",
+      "domain": "Мовно-літературна",
+      "task": "1.05_R216Q02T",
+      "p_value": 0.378,
+      "difficulty_b": 0.65,
+      "point_biserial": 0.158,
+      "infit": 1.19,
+      "outfit": 1.257
+    },
+    {
+      "item": "1.06_R216Q09N",
+      "domain": "Мовно-літературна",
+      "task": "1.06_R216Q09N",
+      "p_value": 0.459,
+      "difficulty_b": 0.261,
+      "point_biserial": 0.423,
+      "infit": 0.946,
+      "outfit": 0.939
+    },
+    {
+      "item": "1.07_R216Q06O",
+      "domain": "Мовно-літературна",
+      "task": "1.07_R216Q06O",
+      "p_value": 0.565,
+      "difficulty_b": -0.235,
+      "point_biserial": 0.257,
+      "infit": 1.082,
+      "outfit": 1.121
+    },
+    {
+      "item": "1.08_R216Q10N",
+      "domain": "Мовно-літературна",
+      "task": "1.08_R216Q10N",
+      "p_value": 0.323,
+      "difficulty_b": 0.935,
+      "point_biserial": 0.097,
+      "infit": 1.236,
+      "outfit": 1.314
+    },
+    {
+      "item": "1.09_R216Q04T",
+      "domain": "Мовно-літературна",
+      "task": "1.09_R216Q04T",
+      "p_value": 0.599,
+      "difficulty_b": -0.392,
+      "point_biserial": 0.253,
+      "infit": 1.078,
+      "outfit": 1.115
+    },
+    {
+      "item": "1.10_R216Q11N",
+      "domain": "Мовно-літературна",
+      "task": "1.10_R216Q11N",
+      "p_value": 0.288,
+      "difficulty_b": 1.123,
+      "point_biserial": 0.029,
+      "infit": 1.295,
+      "outfit": 1.408
+    },
+    {
+      "item": "1.11_R216Q12N",
+      "domain": "Мовно-літературна",
+      "task": "1.11_R216Q12N",
+      "p_value": 0.682,
+      "difficulty_b": -0.808,
+      "point_biserial": 0.261,
+      "infit": 1.044,
+      "outfit": 1.064
+    },
+    {
+      "item": "1.12_L216Q13N",
+      "domain": "Мовно-літературна",
+      "task": "1.12_L216Q13N",
+      "p_value": 0.682,
+      "difficulty_b": -0.806,
+      "point_biserial": 0.267,
+      "infit": 1.047,
+      "outfit": 1.051
+    },
+    {
+      "item": "1.13_L216Q14N",
+      "domain": "Мовно-літературна",
+      "task": "1.13_L216Q14N",
+      "p_value": 0.45,
+      "difficulty_b": 0.305,
+      "point_biserial": 0.345,
+      "infit": 1.011,
+      "outfit": 1.014
+    },
+    {
+      "item": "1.14_L216Q15N",
+      "domain": "Мовно-літературна",
+      "task": "1.14_L216Q15N",
+      "p_value": 0.33,
+      "difficulty_b": 0.896,
+      "point_biserial": -0.004,
+      "infit": 1.338,
+      "outfit": 1.438
+    },
+    {
+      "item": "1.15_L216Q16N",
+      "domain": "Мовно-літературна",
+      "task": "1.15_L216Q16N",
+      "p_value": 0.518,
+      "difficulty_b": -0.013,
+      "point_biserial": 0.428,
+      "infit": 0.939,
+      "outfit": 0.91
+    },
+    {
+      "item": "1.16_L081Q02N_01",
+      "domain": "Мовно-літературна",
+      "task": "1.16_L081Q02N",
+      "p_value": 0.881,
+      "difficulty_b": -2.173,
+      "point_biserial": 0.16,
+      "infit": 1.02,
+      "outfit": 1.156
+    },
+    {
+      "item": "1.16_L081Q02N_02",
+      "domain": "Мовно-літературна",
+      "task": "1.16_L081Q02N",
+      "p_value": 0.522,
+      "difficulty_b": -0.031,
+      "point_biserial": 0.176,
+      "infit": 1.164,
+      "outfit": 1.187
+    },
+    {
+      "item": "1.16_L081Q02N_03",
+      "domain": "Мовно-літературна",
+      "task": "1.16_L081Q02N",
+      "p_value": 0.532,
+      "difficulty_b": -0.078,
+      "point_biserial": 0.238,
+      "infit": 1.107,
+      "outfit": 1.128
+    },
+    {
+      "item": "1.16_L081Q02N_04",
+      "domain": "Мовно-літературна",
+      "task": "1.16_L081Q02N",
+      "p_value": 0.379,
+      "difficulty_b": 0.645,
+      "point_biserial": 0.114,
+      "infit": 1.236,
+      "outfit": 1.275
+    },
+    {
+      "item": "1.16_L081Q02N_05",
+      "domain": "Мовно-літературна",
+      "task": "1.16_L081Q02N",
+      "p_value": 0.558,
+      "difficulty_b": -0.2,
+      "point_biserial": 0.221,
+      "infit": 1.117,
+      "outfit": 1.147
+    },
+    {
+      "item": "1.16_L081Q02N_06",
+      "domain": "Мовно-літературна",
+      "task": "1.16_L081Q02N",
+      "p_value": 0.548,
+      "difficulty_b": -0.153,
+      "point_biserial": 0.246,
+      "infit": 1.097,
+      "outfit": 1.122
+    },
+    {
+      "item": "1.17_R081Q01O",
+      "domain": "Мовно-літературна",
+      "task": "1.17_R081Q01O",
+      "p_value": 0.832,
+      "difficulty_b": -1.739,
+      "point_biserial": 0.286,
+      "infit": 0.96,
+      "outfit": 0.94
+    },
+    {
+      "item": "1.18_R081Q05T",
+      "domain": "Мовно-літературна",
+      "task": "1.18_R081Q05T",
+      "p_value": 0.604,
+      "difficulty_b": -0.421,
+      "point_biserial": 0.335,
+      "infit": 1.006,
+      "outfit": 1.02
+    },
+    {
+      "item": "1.19_L081Q03N",
+      "domain": "Мовно-літературна",
+      "task": "1.19_L081Q03N",
+      "p_value": 0.575,
+      "difficulty_b": -0.281,
+      "point_biserial": 0.31,
+      "infit": 1.037,
+      "outfit": 1.024
+    },
+    {
+      "item": "1.20_L081Q04N",
+      "domain": "Мовно-літературна",
+      "task": "1.20_L081Q04N",
+      "p_value": 0.554,
+      "difficulty_b": -0.181,
+      "point_biserial": 0.451,
+      "infit": 0.916,
+      "outfit": 0.879
+    },
+    {
+      "item": "1.21_L081Q06N",
+      "domain": "Мовно-літературна",
+      "task": "1.21_L081Q06N",
+      "p_value": 0.645,
+      "difficulty_b": -0.621,
+      "point_biserial": 0.29,
+      "infit": 1.036,
+      "outfit": 1.039
+    },
+    {
+      "item": "1.22_L081Q07N",
+      "domain": "Мовно-літературна",
+      "task": "1.22_L081Q07N",
+      "p_value": 0.268,
+      "difficulty_b": 1.239,
+      "point_biserial": 0.201,
+      "infit": 1.088,
+      "outfit": 1.274
+    },
+    {
+      "item": "1.23_L081Q08N",
+      "domain": "Мовно-літературна",
+      "task": "1.23_L081Q08N",
+      "p_value": 0.521,
+      "difficulty_b": -0.026,
+      "point_biserial": 0.36,
+      "infit": 0.999,
+      "outfit": 0.986
+    },
+    {
+      "item": "1.24_L081Q09N",
+      "domain": "Мовно-літературна",
+      "task": "1.24_L081Q09N",
+      "p_value": 0.495,
+      "difficulty_b": 0.093,
+      "point_biserial": 0.342,
+      "infit": 1.016,
+      "outfit": 1.01
+    },
+    {
+      "item": "1.25_L081Q10N",
+      "domain": "Мовно-літературна",
+      "task": "1.25_L081Q10N",
+      "p_value": 0.336,
+      "difficulty_b": 0.865,
+      "point_biserial": 0.311,
+      "infit": 1.028,
+      "outfit": 1.062
+    },
+    {
+      "item": "2.01_PM985Q01O",
+      "domain": "Математична",
+      "task": "2.01_PM985Q01O",
+      "p_value": 0.844,
+      "difficulty_b": -1.83,
+      "point_biserial": 0.196,
+      "infit": 1.014,
+      "outfit": 1.137
+    },
+    {
+      "item": "2.02_PM985Q02O",
+      "domain": "Математична",
+      "task": "2.02_PM985Q02O",
+      "p_value": 0.652,
+      "difficulty_b": -0.652,
+      "point_biserial": 0.254,
+      "infit": 1.058,
+      "outfit": 1.114
+    },
+    {
+      "item": "2.03_PM985Q04N",
+      "domain": "Математична",
+      "task": "2.03_PM985Q04N",
+      "p_value": 0.502,
+      "difficulty_b": 0.06,
+      "point_biserial": 0.436,
+      "infit": 0.936,
+      "outfit": 0.913
+    },
+    {
+      "item": "2.04_PM985Q03T",
+      "domain": "Математична",
+      "task": "2.04_PM985Q03T",
+      "p_value": 0.635,
+      "difficulty_b": -0.57,
+      "point_biserial": 0.361,
+      "infit": 0.98,
+      "outfit": 0.945
+    },
+    {
+      "item": "2.05_PM985Q05N",
+      "domain": "Математична",
+      "task": "2.05_PM985Q05N",
+      "p_value": 0.383,
+      "difficulty_b": 0.626,
+      "point_biserial": 0.156,
+      "infit": 1.185,
+      "outfit": 1.228
+    },
+    {
+      "item": "2.06_PM985Q06N",
+      "domain": "Математична",
+      "task": "2.06_PM985Q06N",
+      "p_value": 0.358,
+      "difficulty_b": 0.752,
+      "point_biserial": 0.005,
+      "infit": 1.323,
+      "outfit": 1.421
+    },
+    {
+      "item": "2.07_M159Q01O",
+      "domain": "Математична",
+      "task": "2.07_M159Q01O",
+      "p_value": 0.704,
+      "difficulty_b": -0.926,
+      "point_biserial": 0.269,
+      "infit": 1.026,
+      "outfit": 1.093
+    },
+    {
+      "item": "2.08_M159Q02O",
+      "domain": "Математична",
+      "task": "2.08_M159Q02O",
+      "p_value": 0.826,
+      "difficulty_b": -1.69,
+      "point_biserial": 0.273,
+      "infit": 0.964,
+      "outfit": 1.029
+    },
+    {
+      "item": "2.09_M159Q03O",
+      "domain": "Математична",
+      "task": "2.09_M159Q03O",
+      "p_value": 0.805,
+      "difficulty_b": -1.541,
+      "point_biserial": 0.131,
+      "infit": 1.068,
+      "outfit": 1.392
+    },
+    {
+      "item": "2.10_M159Q04O",
+      "domain": "Математична",
+      "task": "2.10_M159Q04O",
+      "p_value": 0.227,
+      "difficulty_b": 1.493,
+      "point_biserial": 0.172,
+      "infit": 1.144,
+      "outfit": 1.232
+    },
+    {
+      "item": "2.11_M159Q05N",
+      "domain": "Математична",
+      "task": "2.11_M159Q05N",
+      "p_value": 0.386,
+      "difficulty_b": 0.611,
+      "point_biserial": 0.302,
+      "infit": 1.05,
+      "outfit": 1.068
+    },
+    {
+      "item": "2.12_PM923Q01O",
+      "domain": "Математична",
+      "task": "2.12_PM923Q01O",
+      "p_value": 0.627,
+      "difficulty_b": -0.529,
+      "point_biserial": 0.468,
+      "infit": 0.891,
+      "outfit": 0.839
+    },
+    {
+      "item": "2.13_PM923Q03O",
+      "domain": "Математична",
+      "task": "2.13_PM923Q03O",
+      "p_value": 0.532,
+      "difficulty_b": -0.076,
+      "point_biserial": 0.426,
+      "infit": 0.94,
+      "outfit": 0.905
+    },
+    {
+      "item": "2.14_PM923Q02N",
+      "domain": "Математична",
+      "task": "2.14_PM923Q02N",
+      "p_value": 0.469,
+      "difficulty_b": 0.217,
+      "point_biserial": 0.497,
+      "infit": 0.879,
+      "outfit": 0.858
+    },
+    {
+      "item": "2.15_PM923Q05N",
+      "domain": "Математична",
+      "task": "2.15_PM923Q05N",
+      "p_value": 0.606,
+      "difficulty_b": -0.427,
+      "point_biserial": 0.391,
+      "infit": 0.961,
+      "outfit": 0.935
+    },
+    {
+      "item": "2.16_PM923Q04O",
+      "domain": "Математична",
+      "task": "2.16_PM923Q04O",
+      "p_value": 0.382,
+      "difficulty_b": 0.633,
+      "point_biserial": 0.379,
+      "infit": 0.967,
+      "outfit": 0.992
+    },
+    {
+      "item": "2.17_PM923Q06N",
+      "domain": "Математична",
+      "task": "2.17_PM923Q06N",
+      "p_value": 0.346,
+      "difficulty_b": 0.812,
+      "point_biserial": 0.563,
+      "infit": 0.797,
+      "outfit": 0.793
+    },
+    {
+      "item": "2.18_PM934Q01T",
+      "domain": "Математична",
+      "task": "2.18_PM934Q01T",
+      "p_value": 0.57,
+      "difficulty_b": -0.255,
+      "point_biserial": 0.351,
+      "infit": 1.002,
+      "outfit": 0.976
+    },
+    {
+      "item": "2.19_PM934Q03N",
+      "domain": "Математична",
+      "task": "2.19_PM934Q03N",
+      "p_value": 0.425,
+      "difficulty_b": 0.425,
+      "point_biserial": 0.319,
+      "infit": 1.032,
+      "outfit": 1.043
+    },
+    {
+      "item": "2.20_PM934Q02O",
+      "domain": "Математична",
+      "task": "2.20_PM934Q02O",
+      "p_value": 0.418,
+      "difficulty_b": 0.46,
+      "point_biserial": 0.212,
+      "infit": 1.142,
+      "outfit": 1.164
+    },
+    {
+      "item": "2.21_PM934Q04N",
+      "domain": "Математична",
+      "task": "2.21_PM934Q04N",
+      "p_value": 0.749,
+      "difficulty_b": -1.177,
+      "point_biserial": 0.288,
+      "infit": 0.999,
+      "outfit": 1.011
+    },
+    {
+      "item": "3.01_S253Q01N",
+      "domain": "Природнича",
+      "task": "3.01_S253Q01N",
+      "p_value": 0.653,
+      "difficulty_b": -0.657,
+      "point_biserial": 0.456,
+      "infit": 0.896,
+      "outfit": 0.835
+    },
+    {
+      "item": "3.02_S253Q03N_01",
+      "domain": "Природнича",
+      "task": "3.02_S253Q03N",
+      "p_value": 0.671,
+      "difficulty_b": -0.753,
+      "point_biserial": 0.269,
+      "infit": 1.051,
+      "outfit": 1.046
+    },
+    {
+      "item": "3.02_S253Q03N_02",
+      "domain": "Природнича",
+      "task": "3.02_S253Q03N",
+      "p_value": 0.423,
+      "difficulty_b": 0.431,
+      "point_biserial": 0.427,
+      "infit": 0.936,
+      "outfit": 0.938
+    },
+    {
+      "item": "3.03_S253Q04N",
+      "domain": "Природнича",
+      "task": "3.03_S253Q04N",
+      "p_value": 0.48,
+      "difficulty_b": 0.166,
+      "point_biserial": 0.556,
+      "infit": 0.824,
+      "outfit": 0.799
+    },
+    {
+      "item": "3.04_S253Q02O",
+      "domain": "Природнича",
+      "task": "3.04_S253Q02O",
+      "p_value": 0.54,
+      "difficulty_b": -0.114,
+      "point_biserial": 0.441,
+      "infit": 0.926,
+      "outfit": 0.887
+    },
+    {
+      "item": "3.05_S253Q06N",
+      "domain": "Природнича",
+      "task": "3.05_S253Q06N",
+      "p_value": 0.466,
+      "difficulty_b": 0.228,
+      "point_biserial": 0.545,
+      "infit": 0.833,
+      "outfit": 0.809
+    },
+    {
+      "item": "3.06_S253Q07N",
+      "domain": "Природнича",
+      "task": "3.06_S253Q07N",
+      "p_value": 0.725,
+      "difficulty_b": -1.042,
+      "point_biserial": 0.337,
+      "infit": 0.972,
+      "outfit": 0.953
+    },
+    {
+      "item": "3.07_S253Q08N",
+      "domain": "Природнича",
+      "task": "3.07_S253Q08N",
+      "p_value": 0.696,
+      "difficulty_b": -0.883,
+      "point_biserial": 0.425,
+      "infit": 0.916,
+      "outfit": 0.824
+    },
+    {
+      "item": "3.08_S253Q05Т",
+      "domain": "Природнича",
+      "task": "3.08_S253Q05Т",
+      "p_value": 0.797,
+      "difficulty_b": -1.481,
+      "point_biserial": 0.393,
+      "infit": 0.9,
+      "outfit": 0.811
+    },
+    {
+      "item": "3.09_S253Q09N",
+      "domain": "Природнича",
+      "task": "3.09_S253Q09N",
+      "p_value": 0.54,
+      "difficulty_b": -0.117,
+      "point_biserial": 0.48,
+      "infit": 0.892,
+      "outfit": 0.854
+    },
+    {
+      "item": "3.10_S253Q10N",
+      "domain": "Природнича",
+      "task": "3.10_S253Q10N",
+      "p_value": 0.418,
+      "difficulty_b": 0.46,
+      "point_biserial": 0.594,
+      "infit": 0.787,
+      "outfit": 0.763
+    },
+    {
+      "item": "3.11_S253Q11N_01",
+      "domain": "Природнича",
+      "task": "3.11_S253Q11N",
+      "p_value": 0.747,
+      "difficulty_b": -1.168,
+      "point_biserial": 0.274,
+      "infit": 1.022,
+      "outfit": 0.968
+    },
+    {
+      "item": "3.11_S253Q11N_02",
+      "domain": "Природнича",
+      "task": "3.11_S253Q11N",
+      "p_value": 0.368,
+      "difficulty_b": 0.703,
+      "point_biserial": 0.452,
+      "infit": 0.906,
+      "outfit": 0.9
+    },
+    {
+      "item": "3.12_S253Q12N",
+      "domain": "Природнича",
+      "task": "3.12_S253Q12N",
+      "p_value": 0.426,
+      "difficulty_b": 0.42,
+      "point_biserial": 0.227,
+      "infit": 1.121,
+      "outfit": 1.158
+    },
+    {
+      "item": "3.13_S253Q13N",
+      "domain": "Природнича",
+      "task": "3.13_S253Q13N",
+      "p_value": 0.454,
+      "difficulty_b": 0.286,
+      "point_biserial": 0.507,
+      "infit": 0.867,
+      "outfit": 0.848
+    },
+    {
+      "item": "3.14_S253Q14N",
+      "domain": "Природнича",
+      "task": "3.14_S253Q14N",
+      "p_value": 0.337,
+      "difficulty_b": 0.861,
+      "point_biserial": 0.047,
+      "infit": 1.281,
+      "outfit": 1.384
+    },
+    {
+      "item": "3.15_S253Q15N",
+      "domain": "Природнича",
+      "task": "3.15_S253Q15N",
+      "p_value": 0.572,
+      "difficulty_b": -0.264,
+      "point_biserial": 0.46,
+      "infit": 0.907,
+      "outfit": 0.865
+    },
+    {
+      "item": "3.16_S447Q02O",
+      "domain": "Природнича",
+      "task": "3.16_S447Q02O",
+      "p_value": 0.35,
+      "difficulty_b": 0.795,
+      "point_biserial": 0.428,
+      "infit": 0.933,
+      "outfit": 0.924
+    },
+    {
+      "item": "3.17_S447Q01N",
+      "domain": "Природнича",
+      "task": "3.17_S447Q01N",
+      "p_value": 0.695,
+      "difficulty_b": -0.876,
+      "point_biserial": 0.433,
+      "infit": 0.907,
+      "outfit": 0.83
+    },
+    {
+      "item": "3.18_S447Q03O",
+      "domain": "Природнича",
+      "task": "3.18_S447Q03O",
+      "p_value": 0.464,
+      "difficulty_b": 0.238,
+      "point_biserial": 0.385,
+      "infit": 0.981,
+      "outfit": 0.968
+    },
+    {
+      "item": "3.19_S447Q04O",
+      "domain": "Природнича",
+      "task": "3.19_S447Q04O",
+      "p_value": 0.539,
+      "difficulty_b": -0.112,
+      "point_biserial": 0.427,
+      "infit": 0.94,
+      "outfit": 0.902
+    },
+    {
+      "item": "3.20_S447Q02N",
+      "domain": "Природнича",
+      "task": "3.20_S447Q02N",
+      "p_value": 0.627,
+      "difficulty_b": -0.531,
+      "point_biserial": 0.455,
+      "infit": 0.905,
+      "outfit": 0.834
+    },
+    {
+      "item": "3.21_S447Q05Т",
+      "domain": "Природнича",
+      "task": "3.21_S447Q05Т",
+      "p_value": 0.372,
+      "difficulty_b": 0.682,
+      "point_biserial": 0.303,
+      "infit": 1.054,
+      "outfit": 1.063
+    },
+    {
+      "item": "3.22_S447Q06N",
+      "domain": "Природнича",
+      "task": "3.22_S447Q06N",
+      "p_value": 0.547,
+      "difficulty_b": -0.148,
+      "point_biserial": 0.199,
+      "infit": 1.138,
+      "outfit": 1.182
+    },
+    {
+      "item": "3.23_S447Q07N",
+      "domain": "Природнича",
+      "task": "3.23_S447Q07N",
+      "p_value": 0.71,
+      "difficulty_b": -0.957,
+      "point_biserial": 0.406,
+      "infit": 0.924,
+      "outfit": 0.857
+    },
+    {
+      "item": "4.01_H001Q01N_01",
+      "domain": "Громадянсько-історична",
+      "task": "4.01_H001Q01N",
+      "p_value": 0.549,
+      "difficulty_b": -0.159,
+      "point_biserial": 0.475,
+      "infit": 0.895,
+      "outfit": 0.868
+    },
+    {
+      "item": "4.01_H001Q01N_02",
+      "domain": "Громадянсько-історична",
+      "task": "4.01_H001Q01N",
+      "p_value": 0.451,
+      "difficulty_b": 0.301,
+      "point_biserial": 0.549,
+      "infit": 0.833,
+      "outfit": 0.81
+    },
+    {
+      "item": "4.01_H001Q01N_03",
+      "domain": "Громадянсько-історична",
+      "task": "4.01_H001Q01N",
+      "p_value": 0.522,
+      "difficulty_b": -0.034,
+      "point_biserial": 0.506,
+      "infit": 0.87,
+      "outfit": 0.839
+    },
+    {
+      "item": "4.01_H001Q01N_04",
+      "domain": "Громадянсько-історична",
+      "task": "4.01_H001Q01N",
+      "p_value": 0.54,
+      "difficulty_b": -0.114,
+      "point_biserial": 0.467,
+      "infit": 0.903,
+      "outfit": 0.869
+    },
+    {
+      "item": "4.01_H001Q01N_05",
+      "domain": "Громадянсько-історична",
+      "task": "4.01_H001Q01N",
+      "p_value": 0.497,
+      "difficulty_b": 0.086,
+      "point_biserial": 0.611,
+      "infit": 0.778,
+      "outfit": 0.739
+    },
+    {
+      "item": "4.02_H001Q02N_01",
+      "domain": "Громадянсько-історична",
+      "task": "4.02_H001Q02N",
+      "p_value": 0.109,
+      "difficulty_b": 2.471,
+      "point_biserial": -0.161,
+      "infit": 1.268,
+      "outfit": 2.195
+    },
+    {
+      "item": "4.02_H001Q02N_02",
+      "domain": "Громадянсько-історична",
+      "task": "4.02_H001Q02N",
+      "p_value": 0.637,
+      "difficulty_b": -0.579,
+      "point_biserial": 0.333,
+      "infit": 0.998,
+      "outfit": 1.01
+    },
+    {
+      "item": "4.02_H001Q02N_03",
+      "domain": "Громадянсько-історична",
+      "task": "4.02_H001Q02N",
+      "p_value": 0.089,
+      "difficulty_b": 2.718,
+      "point_biserial": -0.096,
+      "infit": 1.191,
+      "outfit": 2.14
+    },
+    {
+      "item": "4.02_H001Q02N_04",
+      "domain": "Громадянсько-історична",
+      "task": "4.02_H001Q02N",
+      "p_value": 0.512,
+      "difficulty_b": 0.015,
+      "point_biserial": 0.359,
+      "infit": 1.001,
+      "outfit": 0.994
+    },
+    {
+      "item": "4.03_H001Q03N_01",
+      "domain": "Громадянсько-історична",
+      "task": "4.03_H001Q03N",
+      "p_value": 0.613,
+      "difficulty_b": -0.463,
+      "point_biserial": 0.478,
+      "infit": 0.887,
+      "outfit": 0.824
+    },
+    {
+      "item": "4.03_H001Q03N_02",
+      "domain": "Громадянсько-історична",
+      "task": "4.03_H001Q03N",
+      "p_value": 0.619,
+      "difficulty_b": -0.492,
+      "point_biserial": 0.462,
+      "infit": 0.898,
+      "outfit": 0.84
+    },
+    {
+      "item": "4.03_H001Q03N_03",
+      "domain": "Громадянсько-історична",
+      "task": "4.03_H001Q03N",
+      "p_value": 0.626,
+      "difficulty_b": -0.524,
+      "point_biserial": 0.467,
+      "infit": 0.893,
+      "outfit": 0.83
+    },
+    {
+      "item": "4.04_H001Q04N_01",
+      "domain": "Громадянсько-історична",
+      "task": "4.04_H001Q04N",
+      "p_value": 0.806,
+      "difficulty_b": -1.548,
+      "point_biserial": 0.38,
+      "infit": 0.919,
+      "outfit": 0.768
+    },
+    {
+      "item": "4.04_H001Q04N_02",
+      "domain": "Громадянсько-історична",
+      "task": "4.04_H001Q04N",
+      "p_value": 0.6,
+      "difficulty_b": -0.399,
+      "point_biserial": 0.598,
+      "infit": 0.782,
+      "outfit": 0.728
+    },
+    {
+      "item": "4.04_H001Q04N_03",
+      "domain": "Громадянсько-історична",
+      "task": "4.04_H001Q04N",
+      "p_value": 0.616,
+      "difficulty_b": -0.478,
+      "point_biserial": 0.474,
+      "infit": 0.887,
+      "outfit": 0.837
+    },
+    {
+      "item": "4.05_H001Q05N_01",
+      "domain": "Громадянсько-історична",
+      "task": "4.05_H001Q05N",
+      "p_value": 0.708,
+      "difficulty_b": -0.945,
+      "point_biserial": 0.397,
+      "infit": 0.94,
+      "outfit": 0.839
+    },
+    {
+      "item": "4.05_H001Q05N_02",
+      "domain": "Громадянсько-історична",
+      "task": "4.05_H001Q05N",
+      "p_value": 0.494,
+      "difficulty_b": 0.099,
+      "point_biserial": 0.598,
+      "infit": 0.789,
+      "outfit": 0.757
+    },
+    {
+      "item": "4.05_H001Q05N_03",
+      "domain": "Громадянсько-історична",
+      "task": "4.05_H001Q05N",
+      "p_value": 0.628,
+      "difficulty_b": -0.534,
+      "point_biserial": 0.435,
+      "infit": 0.917,
+      "outfit": 0.884
+    },
+    {
+      "item": "4.06_H001Q06N",
+      "domain": "Громадянсько-історична",
+      "task": "4.06_H001Q06N",
+      "p_value": 0.675,
+      "difficulty_b": -0.771,
+      "point_biserial": 0.46,
+      "infit": 0.89,
+      "outfit": 0.82
+    },
+    {
+      "item": "4.07_H001Q07N",
+      "domain": "Громадянсько-історична",
+      "task": "4.07_H001Q07N",
+      "p_value": 0.524,
+      "difficulty_b": -0.042,
+      "point_biserial": 0.487,
+      "infit": 0.886,
+      "outfit": 0.852
+    },
+    {
+      "item": "4.08_H001Q08N",
+      "domain": "Громадянсько-історична",
+      "task": "4.08_H001Q08N",
+      "p_value": 0.718,
+      "difficulty_b": -1.003,
+      "point_biserial": 0.428,
+      "infit": 0.903,
+      "outfit": 0.827
+    },
+    {
+      "item": "4.09_H001Q09N",
+      "domain": "Громадянсько-історична",
+      "task": "4.09_H001Q09N",
+      "p_value": 0.661,
+      "difficulty_b": -0.7,
+      "point_biserial": 0.5,
+      "infit": 0.855,
+      "outfit": 0.798
+    },
+    {
+      "item": "4.10_H001Q10N",
+      "domain": "Громадянсько-історична",
+      "task": "4.10_H001Q10N",
+      "p_value": 0.65,
+      "difficulty_b": -0.645,
+      "point_biserial": 0.347,
+      "infit": 0.989,
+      "outfit": 0.957
+    },
+    {
+      "item": "4.11_H001Q11N",
+      "domain": "Громадянсько-історична",
+      "task": "4.11_H001Q11N",
+      "p_value": 0.459,
+      "difficulty_b": 0.264,
+      "point_biserial": 0.513,
+      "infit": 0.867,
+      "outfit": 0.838
+    }
+  ],
+  "dif": {
+    "focal": "Пілотний клас",
+    "reference": "Непілотна школа",
+    "counts": {
+      "A": 101,
+      "B": 2
+    },
+    "flagged_C": [],
+    "all": [
+      {
+        "item": "1.01_R216Q03T_01",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.588,
+        "delta_ets": -1.087,
+        "category": "B"
+      },
+      {
+        "item": "1.01_R216Q03T_02",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.116,
+        "delta_ets": -0.258,
+        "category": "A"
+      },
+      {
+        "item": "1.01_R216Q03T_03",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.172,
+        "delta_ets": -0.372,
+        "category": "A"
+      },
+      {
+        "item": "1.01_R216Q03T_04",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.956,
+        "delta_ets": 0.105,
+        "category": "A"
+      },
+      {
+        "item": "1.02_R216Q07N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.127,
+        "delta_ets": -0.282,
+        "category": "A"
+      },
+      {
+        "item": "1.03_R216Q08N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.874,
+        "delta_ets": 0.316,
+        "category": "A"
+      },
+      {
+        "item": "1.04_R216Q01O",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.029,
+        "delta_ets": -0.068,
+        "category": "A"
+      },
+      {
+        "item": "1.05_R216Q02T",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.91,
+        "delta_ets": 0.222,
+        "category": "A"
+      },
+      {
+        "item": "1.06_R216Q09N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.86,
+        "delta_ets": 0.355,
+        "category": "A"
+      },
+      {
+        "item": "1.07_R216Q06O",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.268,
+        "delta_ets": -0.558,
+        "category": "A"
+      },
+      {
+        "item": "1.08_R216Q10N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.867,
+        "delta_ets": 0.336,
+        "category": "A"
+      },
+      {
+        "item": "1.09_R216Q04T",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.036,
+        "delta_ets": -0.083,
+        "category": "A"
+      },
+      {
+        "item": "1.10_R216Q11N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.919,
+        "delta_ets": 0.198,
+        "category": "A"
+      },
+      {
+        "item": "1.11_R216Q12N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.934,
+        "delta_ets": 0.161,
+        "category": "A"
+      },
+      {
+        "item": "1.12_L216Q13N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.678,
+        "delta_ets": 0.914,
+        "category": "A"
+      },
+      {
+        "item": "1.13_L216Q14N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.026,
+        "delta_ets": -0.061,
+        "category": "A"
+      },
+      {
+        "item": "1.14_L216Q15N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.883,
+        "delta_ets": 0.293,
+        "category": "A"
+      },
+      {
+        "item": "1.15_L216Q16N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.088,
+        "delta_ets": -0.199,
+        "category": "A"
+      },
+      {
+        "item": "1.16_L081Q02N_01",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.754,
+        "delta_ets": 0.664,
+        "category": "A"
+      },
+      {
+        "item": "1.16_L081Q02N_02",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.888,
+        "delta_ets": 0.279,
+        "category": "A"
+      },
+      {
+        "item": "1.16_L081Q02N_03",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.802,
+        "delta_ets": 0.518,
+        "category": "A"
+      },
+      {
+        "item": "1.16_L081Q02N_04",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.956,
+        "delta_ets": 0.107,
+        "category": "A"
+      },
+      {
+        "item": "1.16_L081Q02N_05",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.79,
+        "delta_ets": 0.555,
+        "category": "A"
+      },
+      {
+        "item": "1.16_L081Q02N_06",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.861,
+        "delta_ets": 0.352,
+        "category": "A"
+      },
+      {
+        "item": "1.17_R081Q01O",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.067,
+        "delta_ets": -0.152,
+        "category": "A"
+      },
+      {
+        "item": "1.18_R081Q05T",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.982,
+        "delta_ets": 0.042,
+        "category": "A"
+      },
+      {
+        "item": "1.19_L081Q03N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.096,
+        "delta_ets": -0.215,
+        "category": "A"
+      },
+      {
+        "item": "1.20_L081Q04N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.89,
+        "delta_ets": 0.273,
+        "category": "A"
+      },
+      {
+        "item": "1.21_L081Q06N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.871,
+        "delta_ets": 0.325,
+        "category": "A"
+      },
+      {
+        "item": "1.22_L081Q07N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.044,
+        "delta_ets": -0.101,
+        "category": "A"
+      },
+      {
+        "item": "1.23_L081Q08N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.252,
+        "delta_ets": -0.528,
+        "category": "A"
+      },
+      {
+        "item": "1.24_L081Q09N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 0.83,
+        "delta_ets": 0.437,
+        "category": "A"
+      },
+      {
+        "item": "1.25_L081Q10N",
+        "domain": "Мовно-літературна",
+        "alpha_mh": 1.104,
+        "delta_ets": -0.233,
+        "category": "A"
+      },
+      {
+        "item": "2.01_PM985Q01O",
+        "domain": "Математична",
+        "alpha_mh": 0.982,
+        "delta_ets": 0.042,
+        "category": "A"
+      },
+      {
+        "item": "2.02_PM985Q02O",
+        "domain": "Математична",
+        "alpha_mh": 1.102,
+        "delta_ets": -0.229,
+        "category": "A"
+      },
+      {
+        "item": "2.03_PM985Q04N",
+        "domain": "Математична",
+        "alpha_mh": 0.919,
+        "delta_ets": 0.198,
+        "category": "A"
+      },
+      {
+        "item": "2.04_PM985Q03T",
+        "domain": "Математична",
+        "alpha_mh": 0.83,
+        "delta_ets": 0.439,
+        "category": "A"
+      },
+      {
+        "item": "2.05_PM985Q05N",
+        "domain": "Математична",
+        "alpha_mh": 1.18,
+        "delta_ets": -0.389,
+        "category": "A"
+      },
+      {
+        "item": "2.06_PM985Q06N",
+        "domain": "Математична",
+        "alpha_mh": 1.165,
+        "delta_ets": -0.359,
+        "category": "A"
+      },
+      {
+        "item": "2.07_M159Q01O",
+        "domain": "Математична",
+        "alpha_mh": 0.979,
+        "delta_ets": 0.05,
+        "category": "A"
+      },
+      {
+        "item": "2.08_M159Q02O",
+        "domain": "Математична",
+        "alpha_mh": 0.945,
+        "delta_ets": 0.133,
+        "category": "A"
+      },
+      {
+        "item": "2.09_M159Q03O",
+        "domain": "Математична",
+        "alpha_mh": 0.961,
+        "delta_ets": 0.092,
+        "category": "A"
+      },
+      {
+        "item": "2.10_M159Q04O",
+        "domain": "Математична",
+        "alpha_mh": 1.157,
+        "delta_ets": -0.342,
+        "category": "A"
+      },
+      {
+        "item": "2.11_M159Q05N",
+        "domain": "Математична",
+        "alpha_mh": 0.793,
+        "delta_ets": 0.545,
+        "category": "A"
+      },
+      {
+        "item": "2.12_PM923Q01O",
+        "domain": "Математична",
+        "alpha_mh": 0.983,
+        "delta_ets": 0.039,
+        "category": "A"
+      },
+      {
+        "item": "2.13_PM923Q03O",
+        "domain": "Математична",
+        "alpha_mh": 1.065,
+        "delta_ets": -0.148,
+        "category": "A"
+      },
+      {
+        "item": "2.14_PM923Q02N",
+        "domain": "Математична",
+        "alpha_mh": 1.006,
+        "delta_ets": -0.013,
+        "category": "A"
+      },
+      {
+        "item": "2.15_PM923Q05N",
+        "domain": "Математична",
+        "alpha_mh": 0.925,
+        "delta_ets": 0.182,
+        "category": "A"
+      },
+      {
+        "item": "2.16_PM923Q04O",
+        "domain": "Математична",
+        "alpha_mh": 0.941,
+        "delta_ets": 0.142,
+        "category": "A"
+      },
+      {
+        "item": "2.17_PM923Q06N",
+        "domain": "Математична",
+        "alpha_mh": 1.123,
+        "delta_ets": -0.272,
+        "category": "A"
+      },
+      {
+        "item": "2.18_PM934Q01T",
+        "domain": "Математична",
+        "alpha_mh": 0.92,
+        "delta_ets": 0.197,
+        "category": "A"
+      },
+      {
+        "item": "2.19_PM934Q03N",
+        "domain": "Математична",
+        "alpha_mh": 0.915,
+        "delta_ets": 0.209,
+        "category": "A"
+      },
+      {
+        "item": "2.20_PM934Q02O",
+        "domain": "Математична",
+        "alpha_mh": 0.844,
+        "delta_ets": 0.399,
+        "category": "A"
+      },
+      {
+        "item": "2.21_PM934Q04N",
+        "domain": "Математична",
+        "alpha_mh": 0.826,
+        "delta_ets": 0.448,
+        "category": "A"
+      },
+      {
+        "item": "3.01_S253Q01N",
+        "domain": "Природнича",
+        "alpha_mh": 1.083,
+        "delta_ets": -0.188,
+        "category": "A"
+      },
+      {
+        "item": "3.02_S253Q03N_01",
+        "domain": "Природнича",
+        "alpha_mh": 0.95,
+        "delta_ets": 0.121,
+        "category": "A"
+      },
+      {
+        "item": "3.02_S253Q03N_02",
+        "domain": "Природнича",
+        "alpha_mh": 0.97,
+        "delta_ets": 0.071,
+        "category": "A"
+      },
+      {
+        "item": "3.03_S253Q04N",
+        "domain": "Природнича",
+        "alpha_mh": 1.477,
+        "delta_ets": -0.916,
+        "category": "A"
+      },
+      {
+        "item": "3.04_S253Q02O",
+        "domain": "Природнича",
+        "alpha_mh": 1.452,
+        "delta_ets": -0.877,
+        "category": "A"
+      },
+      {
+        "item": "3.05_S253Q06N",
+        "domain": "Природнича",
+        "alpha_mh": 1.342,
+        "delta_ets": -0.692,
+        "category": "A"
+      },
+      {
+        "item": "3.06_S253Q07N",
+        "domain": "Природнича",
+        "alpha_mh": 0.956,
+        "delta_ets": 0.105,
+        "category": "A"
+      },
+      {
+        "item": "3.07_S253Q08N",
+        "domain": "Природнича",
+        "alpha_mh": 0.787,
+        "delta_ets": 0.562,
+        "category": "A"
+      },
+      {
+        "item": "3.08_S253Q05Т",
+        "domain": "Природнича",
+        "alpha_mh": 1.342,
+        "delta_ets": -0.692,
+        "category": "A"
+      },
+      {
+        "item": "3.09_S253Q09N",
+        "domain": "Природнича",
+        "alpha_mh": 1.274,
+        "delta_ets": -0.569,
+        "category": "A"
+      },
+      {
+        "item": "3.10_S253Q10N",
+        "domain": "Природнича",
+        "alpha_mh": 1.328,
+        "delta_ets": -0.666,
+        "category": "A"
+      },
+      {
+        "item": "3.11_S253Q11N_01",
+        "domain": "Природнича",
+        "alpha_mh": 0.92,
+        "delta_ets": 0.196,
+        "category": "A"
+      },
+      {
+        "item": "3.11_S253Q11N_02",
+        "domain": "Природнича",
+        "alpha_mh": 1.541,
+        "delta_ets": -1.016,
+        "category": "B"
+      },
+      {
+        "item": "3.12_S253Q12N",
+        "domain": "Природнича",
+        "alpha_mh": 1.08,
+        "delta_ets": -0.18,
+        "category": "A"
+      },
+      {
+        "item": "3.13_S253Q13N",
+        "domain": "Природнича",
+        "alpha_mh": 1.324,
+        "delta_ets": -0.659,
+        "category": "A"
+      },
+      {
+        "item": "3.14_S253Q14N",
+        "domain": "Природнича",
+        "alpha_mh": 0.902,
+        "delta_ets": 0.242,
+        "category": "A"
+      },
+      {
+        "item": "3.15_S253Q15N",
+        "domain": "Природнича",
+        "alpha_mh": 1.058,
+        "delta_ets": -0.133,
+        "category": "A"
+      },
+      {
+        "item": "3.16_S447Q02O",
+        "domain": "Природнича",
+        "alpha_mh": 1.058,
+        "delta_ets": -0.134,
+        "category": "A"
+      },
+      {
+        "item": "3.17_S447Q01N",
+        "domain": "Природнича",
+        "alpha_mh": 0.861,
+        "delta_ets": 0.351,
+        "category": "A"
+      },
+      {
+        "item": "3.18_S447Q03O",
+        "domain": "Природнича",
+        "alpha_mh": 0.863,
+        "delta_ets": 0.346,
+        "category": "A"
+      },
+      {
+        "item": "3.19_S447Q04O",
+        "domain": "Природнича",
+        "alpha_mh": 0.893,
+        "delta_ets": 0.266,
+        "category": "A"
+      },
+      {
+        "item": "3.20_S447Q02N",
+        "domain": "Природнича",
+        "alpha_mh": 1.127,
+        "delta_ets": -0.282,
+        "category": "A"
+      },
+      {
+        "item": "3.21_S447Q05Т",
+        "domain": "Природнича",
+        "alpha_mh": 0.775,
+        "delta_ets": 0.6,
+        "category": "A"
+      },
+      {
+        "item": "3.22_S447Q06N",
+        "domain": "Природнича",
+        "alpha_mh": 0.98,
+        "delta_ets": 0.048,
+        "category": "A"
+      },
+      {
+        "item": "3.23_S447Q07N",
+        "domain": "Природнича",
+        "alpha_mh": 0.765,
+        "delta_ets": 0.629,
+        "category": "A"
+      },
+      {
+        "item": "4.01_H001Q01N_01",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.116,
+        "delta_ets": -0.258,
+        "category": "A"
+      },
+      {
+        "item": "4.01_H001Q01N_02",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.169,
+        "delta_ets": -0.367,
+        "category": "A"
+      },
+      {
+        "item": "4.01_H001Q01N_03",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.139,
+        "delta_ets": -0.305,
+        "category": "A"
+      },
+      {
+        "item": "4.01_H001Q01N_04",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.112,
+        "delta_ets": -0.25,
+        "category": "A"
+      },
+      {
+        "item": "4.01_H001Q01N_05",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.111,
+        "delta_ets": -0.247,
+        "category": "A"
+      },
+      {
+        "item": "4.02_H001Q02N_01",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.133,
+        "delta_ets": -0.294,
+        "category": "A"
+      },
+      {
+        "item": "4.02_H001Q02N_02",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.698,
+        "delta_ets": 0.845,
+        "category": "A"
+      },
+      {
+        "item": "4.02_H001Q02N_03",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.32,
+        "delta_ets": -0.652,
+        "category": "A"
+      },
+      {
+        "item": "4.02_H001Q02N_04",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.821,
+        "delta_ets": 0.463,
+        "category": "A"
+      },
+      {
+        "item": "4.03_H001Q03N_01",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.161,
+        "delta_ets": -0.351,
+        "category": "A"
+      },
+      {
+        "item": "4.03_H001Q03N_02",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.171,
+        "delta_ets": -0.371,
+        "category": "A"
+      },
+      {
+        "item": "4.03_H001Q03N_03",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.999,
+        "delta_ets": 0.002,
+        "category": "A"
+      },
+      {
+        "item": "4.04_H001Q04N_01",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.857,
+        "delta_ets": 0.363,
+        "category": "A"
+      },
+      {
+        "item": "4.04_H001Q04N_02",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.95,
+        "delta_ets": 0.119,
+        "category": "A"
+      },
+      {
+        "item": "4.04_H001Q04N_03",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.111,
+        "delta_ets": -0.246,
+        "category": "A"
+      },
+      {
+        "item": "4.05_H001Q05N_01",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.035,
+        "delta_ets": -0.08,
+        "category": "A"
+      },
+      {
+        "item": "4.05_H001Q05N_02",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.249,
+        "delta_ets": -0.522,
+        "category": "A"
+      },
+      {
+        "item": "4.05_H001Q05N_03",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.109,
+        "delta_ets": -0.242,
+        "category": "A"
+      },
+      {
+        "item": "4.06_H001Q06N",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.119,
+        "delta_ets": -0.263,
+        "category": "A"
+      },
+      {
+        "item": "4.07_H001Q07N",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.948,
+        "delta_ets": 0.125,
+        "category": "A"
+      },
+      {
+        "item": "4.08_H001Q08N",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.764,
+        "delta_ets": 0.632,
+        "category": "A"
+      },
+      {
+        "item": "4.09_H001Q09N",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 0.752,
+        "delta_ets": 0.67,
+        "category": "A"
+      },
+      {
+        "item": "4.10_H001Q10N",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.307,
+        "delta_ets": -0.629,
+        "category": "A"
+      },
+      {
+        "item": "4.11_H001Q11N",
+        "domain": "Громадянсько-історична",
+        "alpha_mh": 1.16,
+        "delta_ets": -0.35,
+        "category": "A"
+      }
+    ]
+  },
+  "robustness_partial_credit": {
+    "n_tasks": 80,
+    "corr_with_rasch": 0.9867,
+    "corr_pct_with_rasch": 0.9955
+  }
+}
