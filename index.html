@@ -351,18 +351,6 @@ li{margin-bottom:9px}
     тож перевагу одній із них створити не може.</p>
   </div>
 
-  <figure>
-    <div class="figbox">
-      <div class="figtitle">Похибка вимірювання на різних рівнях підготовки</div>
-      <div class="figsub">Половина ширини 95&nbsp;% інтервалу для результату одного учня, у балах шкали</div>
-      <div id="chart-see"></div>
-    </div>
-    <figcaption><b>Як це читати.</b> Найточніше тест вимірює в середині шкали, де більшість
-    учнів, — там інтервал звужується до ±47 балів. Ближче до країв завдань відповідної
-    складності бракує, і невизначеність зростає майже вдвічі. Пунктир — розмір ефекту пілоту
-    для порівняння: для окремого учня похибка більша за нього скрізь.</figcaption>
-  </figure>
-
   <div class="col">
     <p>Окремий випадок — <b>завдання на встановлення відповідності</b>. Значна частина учнів
     лишила в них незмінену послідовність А,&nbsp;Б,&nbsp;В,&nbsp;Г…, що радше означає
@@ -2213,43 +2201,6 @@ chart("chart-balance", box => {
     s.appendChild(c);
     label(s, w - m.r + 12, cy + 4, sgn(r.smd, 2), "start", 11.5,
       Math.abs(r.smd) > 0.25 ? 640 : 400, col).style.fontVariantNumeric = "tabular-nums";
-  });
-  box.appendChild(s);
-});
-
-/* ---------- похибка вимірювання за рівнем підготовки */
-chart("chart-see", box => {
-  box.innerHTML = "";
-  const P = D["12_psychometrics2"].precision;
-  const pts = P.curve.map(r => ({x: r.score, y: 1.96 * r.se_points}));
-  const w = 720, h = 300, m = {t: 22, r: 24, b: 48, l: 60};
-  const s = mk(w, h);
-  const xs = [150, 850], ys = [0, Math.max(...pts.map(p => p.y)) * 1.12];
-  const X = v => m.l + (v - xs[0]) / (xs[1] - xs[0]) * (w - m.l - m.r);
-  const Y = v => h - m.b - (v - ys[0]) / (ys[1] - ys[0]) * (h - m.t - m.b);
-  [0, 25, 50, 75, 100].forEach(v => {
-    if (v > ys[1]) return;
-    s.appendChild(el("line", {x1: m.l, x2: w - m.r, y1: Y(v), y2: Y(v),
-      stroke: css("--hair"), "stroke-width": 1}));
-    axisText(s, m.l - 10, Y(v) + 4, uk(v, 0), "end");
-  });
-  [200, 350, 500, 650, 800].forEach(v => axisText(s, X(v), h - m.b + 18, uk(v, 0)));
-  axisText(s, (m.l + w - m.r) / 2, h - 10, "бал учня на шкалі 500 / 100", "middle", 11);
-  axisText(s, m.l - 44, m.t - 6, "± балів", "start", 11);
-  // ефект пілоту для порівняння
-  const eff = Math.abs(D["05_effects"].ladders["2_pair_fe"].b);
-  s.appendChild(el("line", {x1: m.l, x2: w - m.r, y1: Y(eff), y2: Y(eff),
-    stroke: css("--s2"), "stroke-width": 1.5, "stroke-dasharray": "5 4"}));
-  label(s, w - m.r - 6, Y(eff) - 8, `різниця між пілотними й непілотними школами — ${uk(eff, 0)}`,
-    "end", 11.5, 560, css("--s2"), true);
-  const d = pts.map((p, i) => `${i ? "L" : "M"}${X(p.x)} ${Y(p.y)}`).join("");
-  s.appendChild(el("path", {d, fill: "none", stroke: css("--s1"), "stroke-width": 2,
-    "stroke-linejoin": "round"}));
-  pts.forEach(p => {
-    const c = el("circle", {cx: X(p.x), cy: Y(p.y), r: 4, fill: css("--s1"),
-      stroke: css("--chart-surface"), "stroke-width": 2});
-    hover(c, `бал ${uk(p.x, 0)}<br>95 % інтервал: <b>±${uk(p.y, 0)} бала</b>`);
-    s.appendChild(c);
   });
   box.appendChild(s);
 });
