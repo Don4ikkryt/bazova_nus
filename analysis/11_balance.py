@@ -50,32 +50,47 @@ matched_on = {
 }
 
 # ------------------------------------------------------------- 3. таблиця балансу
-# «Час» — коли ознака визначилася відносно старту пілоту (2018 р., 5 клас)
+# «Час» — коли ознака визначилася відносно старту пілоту (2018 р., 5 клас).
+# «Блок» — за яким аргументом ознаку читати; у звіті рядки згруповані саме так,
+# бо сортування за |SMD| ставить поруч речі різної природи.
 VARS = [
-    ("rural", "Сільська місцевість", "до", "частка"),
-    ("gymnasium", "Гімназія (проти ліцею)", "до", "частка"),
-    ("size_2018", "Випускників у базі ЗНО-2018", "до", "осіб"),
-    ("z_2018", "Результат ЗНО 2018", "до", "σ"),
-    ("z_2021", "Результат ЗНО 2021", "до", "σ"),
-    ("baseline_pre", "Індекс до пілоту (2018 + 2021)", "до", "σ"),
-    ("baseline_all", "Індекс за 4 роки (2018–2025)", "частково", "σ"),
-    ("parent_edu", "Освіта батьків", "не залежить", "1–5"),
-    ("books", "Книг удома", "не залежить", "1–5"),
-    ("HOME", "Домашні ресурси", "не залежить", "0–1"),
-    ("ladder", "Самооцінка достатку родини", "не залежить", "1–10"),
-    ("UKRLANG", "Українська у щоденному спілкуванні", "не залежить", "1–4"),
-    ("female", "Частка дівчат", "не залежить", "частка"),
-    ("sen", "Частка учнів з ООП", "не залежить", "частка"),
-    ("idp", "Частка ВПО", "після 2022", "частка"),
-    ("abroad", "Частка за кордоном", "після 2022", "частка"),
-    ("remote", "Дистанційний формат", "після 2022", "0–1"),
-    ("WAR", "Обставин війни, що заважали", "після 2022", "0–6"),
-    ("online", "Частка онлайн-складання", "умова вимірювання", "частка"),
-    ("class_size", "Учнів у протестованому класі", "не залежить", "осіб"),
+    ("rural", "Сільська місцевість", "до", "частка", "match"),
+    ("gymnasium", "Гімназія (проти ліцею)", "до", "частка", "match"),
+    ("parent_edu", "Освіта батьків", "не залежить", "1–5", "home"),
+    ("HOME", "Домашні ресурси", "не залежить", "0–1", "home"),
+    ("books", "Книг удома", "не залежить", "1–5", "home"),
+    ("ladder", "Самооцінка достатку родини", "не залежить", "1–10", "home"),
+    ("UKRLANG", "Українська у щоденному спілкуванні", "не залежить", "1–4", "home"),
+    ("sen", "Частка учнів з ООП", "не залежить", "частка", "composition"),
+    ("idp", "Частка ВПО", "після 2022", "частка", "composition"),
+    ("abroad", "Частка за кордоном", "після 2022", "частка", "composition"),
+    ("female", "Частка дівчат", "не залежить", "частка", "composition"),
+    ("WAR", "Обставин війни, що заважали", "після 2022", "0–6", "conditions"),
+    ("class_size", "Учнів у протестованому класі", "не залежить", "осіб", "conditions"),
+    ("remote", "Дистанційний формат", "після 2022", "0–1", "conditions"),
+    ("online", "Частка онлайн-складання", "умова вимірювання", "частка", "conditions"),
 ]
 
-rows = []
-for v, label, when, unit in VARS:
+BLOCKS = {
+    "match": "За чим пари підібрані (відоме до пілоту)",
+    "home": "Соціально-економічне тло родин",
+    "composition": "Склад учнів",
+    "conditions": "Умови навчання й вимірювання 2026",
+}
+
+# Історія ЗНО/НМТ у таблицю балансу не входить: ці ознаки відомі не для всіх шкіл,
+# причому для пілотних і непілотних — для різних. SMD там порівнює дві різні неповні
+# вибірки, а не підібрані групи. Рахуємо їх окремо, щоб навести в застереженні.
+VARS_EXCLUDED = [
+    ("size_2018", "Випускників у базі ЗНО-2018", "до", "осіб", "zno"),
+    ("z_2018", "Результат ЗНО 2018", "до", "σ", "zno"),
+    ("z_2021", "Результат ЗНО 2021", "до", "σ", "zno"),
+    ("baseline_pre", "Індекс до пілоту (2018 + 2021)", "до", "σ", "zno"),
+    ("baseline_all", "Індекс за 4 роки (2018–2025)", "частково", "σ", "zno"),
+]
+
+
+def smd_row(v, label, when, unit, block):
     a = sb.loc[sb.pilot_school == 1, v].dropna()
     b = sb.loc[sb.pilot_school == 0, v].dropna()
     # об'єднане SD — знаменник SMD; рахуємо на школах, а не на учнях
@@ -84,8 +99,8 @@ for v, label, when, unit in VARS:
     piv = (sb[["pair_id", "pilot_school", v]].dropna()
            .pivot_table(index="pair_id", columns="pilot_school", values=v).dropna())
     dif = (piv[1] - piv[0]) if len(piv) else pd.Series(dtype=float)
-    rows.append({
-        "var": v, "label": label, "when": when, "unit": unit,
+    return {
+        "var": v, "label": label, "when": when, "unit": unit, "block": block,
         "n_pilot": int(len(a)), "n_nonpilot": int(len(b)),
         "mean_pilot": round(float(a.mean()), 3), "mean_nonpilot": round(float(b.mean()), 3),
         "sd_pooled": round(sd, 3),
@@ -94,7 +109,11 @@ for v, label, when, unit in VARS:
         # розкид внутрішньопарних різниць — наскільки тісно підібрані пари
         "pair_spread_sd": round(float(dif.std(ddof=1) / sd), 2) if len(piv) > 1 and sd > 0 else None,
         "pair_share_small": round(float((dif.abs() / sd < 0.25).mean()), 3) if len(piv) else None,
-    })
+    }
+
+
+rows = [smd_row(*a) for a in VARS]
+rows_excluded = [smd_row(*a) for a in VARS_EXCLUDED]
 
 n_arm = int(sb.pilot_school.sum())
 se_smd = float(np.sqrt(2 / n_arm))
@@ -106,13 +125,12 @@ summary = {
     "n_under_0.1": int(sum(abs(r["smd"]) < 0.1 for r in rows)),
     "n_over_0.25": int(sum(abs(r["smd"]) > 0.25 for r in rows)),
     "n_over_ci": int(sum(abs(r["smd"]) > 1.96 * se_smd for r in rows)),
-    # чи систематично зміщені в один бік ознаки «сила закладу»
-    "strength_vars": ["size_2018", "z_2018", "z_2021", "baseline_pre", "baseline_all",
-                      "parent_edu", "HOME", "books"],
+    # чи систематично зміщені в один бік ознаки, що описують силу контингенту
+    "background_vars": ["parent_edu", "HOME", "books", "ladder"],
 }
-summary["strength_favor_pilot"] = int(sum(
-    r["smd"] > 0 for r in rows if r["var"] in summary["strength_vars"]))
-summary["strength_n"] = len(summary["strength_vars"])
+summary["background_favor_pilot"] = int(sum(
+    r["smd"] > 0 for r in rows if r["var"] in summary["background_vars"]))
+summary["background_n"] = len(summary["background_vars"])
 
 # ------------- 4. чи пояснює дисбаланс різницю 2026 року: внутрішньопарні зв'язки
 piv = sb.pivot_table(index="pair_id", columns="pilot_school",
@@ -171,6 +189,11 @@ out = {
                     "і донорський пул закладів нам невідомі."),
     "matched_on": matched_on,
     "balance": rows,
+    "blocks": BLOCKS,
+    "balance_excluded": rows_excluded,
+    "note_excluded": ("Історія ЗНО/НМТ до таблиці не входить: ці ознаки відомі лише для "
+                      "частини закладів, причому для пілотних і непілотних — для різних. "
+                      "SMD там порівнює дві неповні вибірки, а не підібрані групи."),
     "summary": summary,
     "link_to_2026": link,
     "sensitivity": sensitivity,
@@ -184,11 +207,17 @@ for k, v in matched_on.items():
 print(f"\n=== баланс: |SMD| < 0,1 у {summary['n_under_0.1']} із {summary['n_vars']}; "
       f"похибка SMD при {n_arm} школах = ±{summary['ci95_smd']}")
 print(f"{'характеристика':36s}{'пілот':>9s}{'непілот':>9s}{'SMD':>8s}{'розкид пар':>12s}")
-for r in sorted(rows, key=lambda r: -abs(r["smd"])):
+for key, title in BLOCKS.items():
+    print(f"— {title}")
+    for r in sorted([r for r in rows if r["block"] == key], key=lambda r: -abs(r["smd"])):
+        print(f"  {r['label']:34s}{r['mean_pilot']:9.3f}{r['mean_nonpilot']:9.3f}"
+              f"{r['smd']:+8.3f}{(r['pair_spread_sd'] or 0):12.2f}")
+print(f"\nознак тла родин на користь пілоту: "
+      f"{summary['background_favor_pilot']} із {summary['background_n']}")
+print("\n=== поза таблицею: історія ЗНО/НМТ (неповні й неоднакові вибірки)")
+for r in rows_excluded:
     print(f"  {r['label']:34s}{r['mean_pilot']:9.3f}{r['mean_nonpilot']:9.3f}"
-          f"{r['smd']:+8.3f}{(r['pair_spread_sd'] or 0):12.2f}")
-print(f"\nознак «сила закладу» на користь пілоту: "
-      f"{summary['strength_favor_pilot']} із {summary['strength_n']}")
+          f"{r['smd']:+8.3f}   шкіл {r['n_pilot']}/{r['n_nonpilot']}, повних пар {r['n_pairs']}")
 print("\n=== зв'язок внутрішньопарних різниць із різницею 2026")
 for v in link.values():
     print(f"  {v['label']:22s} пар={v['n_pairs']:3d}  r={v['r']:+.3f}")
