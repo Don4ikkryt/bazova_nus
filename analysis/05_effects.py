@@ -6,10 +6,14 @@ import pandas as pd
 import statsmodels.formula.api as smf
 from statsmodels.regression.mixed_linear_model import MixedLM
 
-from common import OUT, DOMAINS, GROUP_ORDER
+from common import OUT, DOMAINS, GROUP_ORDER, SUBJECTS
 
 df = pd.read_csv(OUT / "students.csv")
-SCALES = {"score_total": "Загальна", **{f"score_d{d}": n for d, n in DOMAINS.items()}}
+
+# кожна шкала рахується однаково; різниця лише в тому, до якого блоку звіту йде результат
+SCALES = {"score_total": ("ladders", "Загальна"),
+          **{f"score_d{d}": ("by_domain", n) for d, n in DOMAINS.items()},
+          **{f"score_s_{t}": ("by_subject", n) for t, n in SUBJECTS.items()}}
 COVARS = ["female", "sen", "idp", "abroad", "remote", "online_test",
           "books", "HOME", "parent_edu", "UKRLANG"]
 
@@ -68,9 +72,9 @@ def bh(pvals):
     return ranked
 
 
-out = {"ladders": {}, "by_domain": {}, "icc": {}, "extra": {}}
+out = {"ladders": {}, "by_domain": {}, "by_subject": {}, "icc": {}, "extra": {}}
 
-for col, label in SCALES.items():
+for col, (bucket, label) in SCALES.items():
     sd = df[col].std(ddof=1)
     res = {}
 
@@ -106,14 +110,17 @@ for col, label in SCALES.items():
         fit(f"{col} ~ pilot_sch + C(pair_id) + " + " + ".join(used4), d4p), "pilot_sch", sd)
 
     res["missing_share"] = miss
-    out["ladders" if col == "score_total" else "by_domain"] = \
-        res if col == "score_total" else {**out.get("by_domain", {}), label: res}
+    if bucket == "ladders":
+        out["ladders"] = res
+    else:
+        out[bucket][label] = res
 
-# поправка на множинні порівняння по галузях
-for step in ["1_raw", "2_pair_fe", "3_school_fe"]:
-    ps = [out["by_domain"][d][step]["p"] for d in out["by_domain"]]
-    for d, q in zip(out["by_domain"], bh(ps)):
-        out["by_domain"][d][step]["p_bh"] = float(q)
+# поправка на множинні порівняння — окремо в межах галузей і в межах предметних ліній
+for bucket in ["by_domain", "by_subject"]:
+    for step in ["1_raw", "2_pair_fe", "3_school_fe"]:
+        ps = [out[bucket][d][step]["p"] for d in out[bucket]]
+        for d, q in zip(out[bucket], bh(ps)):
+            out[bucket][d][step]["p_bh"] = float(q)
 
 # ------------------------------------------------------- ICC (школа / клас)
 mdf = df.dropna(subset=["score_total"]).copy()

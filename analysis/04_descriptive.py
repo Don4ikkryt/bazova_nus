@@ -5,10 +5,12 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from common import OUT, DOMAINS, GROUP_ORDER
+from common import OUT, DOMAINS, GROUP_ORDER, SUBJECTS
 
 df = pd.read_csv(OUT / "students.csv")
-SCALES = {"score_total": "Загальна", **{f"score_d{d}": n for d, n in DOMAINS.items()}}
+SCALES = {"score_total": "Загальна",
+          **{f"score_d{d}": n for d, n in DOMAINS.items()},
+          **{f"score_s_{t}": n for t, n in SUBJECTS.items()}}
 
 
 def summarize(g, col="score_total"):

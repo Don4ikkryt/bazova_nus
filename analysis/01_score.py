@@ -11,8 +11,9 @@ import re
 import numpy as np
 import pandas as pd
 
-from common import (OUT, DOMAINS, GROUP_ORDER, build_codifier_maps, cronbach_alpha,
-                    encode_column, latinize_code, load_book, norm_label, zscore)
+from common import (OUT, DOMAINS, GROUP_ORDER, SUBJECTS, build_codifier_maps,
+                    cronbach_alpha, encode_column, latinize_code, load_book,
+                    norm_label, subject_of, zscore)
 
 book = load_book()
 test, anketa, key, system = book["test"], book["anketa"], book["key"], book["system"]
@@ -71,7 +72,7 @@ ctx["group"] = ctx.apply(group_of, axis=1)
 ctx["pilot_class"] = (ctx["group"] == GROUP_ORDER[0]).astype(int)
 ctx["pilot_school"] = ctx["school_type_pilot"].str.startswith("Пілотн").astype(int)
 
-# ---------------------------------------------------- 3. бали за галузями
+# ------------------------------------- 3. бали за галузями й предметними лініями
 ctx["n_items"] = len(item_cols)
 ctx["raw_total"] = scored[item_cols].sum(axis=1).values
 ctx["pct_total"] = 100 * ctx["raw_total"] / len(item_cols)
@@ -81,6 +82,11 @@ for d, name in DOMAINS.items():
     cols = [c for c in item_cols if c.startswith(d + ".")]
     ctx[f"raw_d{d}"] = scored[cols].sum(axis=1).values
     ctx[f"pct_d{d}"] = 100 * ctx[f"raw_d{d}"] / len(cols)
+
+for t, name in SUBJECTS.items():
+    cols = [c for c in item_cols if subject_of(c) == t]
+    ctx[f"raw_s_{t}"] = scored[cols].sum(axis=1).values
+    ctx[f"pct_s_{t}"] = 100 * ctx[f"raw_s_{t}"] / len(cols)
 
 # --------------------------------------------- 4. анкета: числове кодування
 anketa_codes = [c for c in anketa.columns if str(c).startswith(("SQ", "SA", "SC"))]
@@ -205,6 +211,11 @@ meta = {
                          for d in DOMAINS},
     "tasks_per_domain": {DOMAINS[d]: int(key[key["domain"] == d]["task"].nunique())
                          for d in DOMAINS},
+    "items_per_subject": {name: int(sum(subject_of(c) == t for c in item_cols))
+                          for t, name in SUBJECTS.items()},
+    "blocks_per_subject": {name: sorted({re.search(r"_([A-Z]+\d+)Q", c).group(1)
+                                         for c in item_cols if subject_of(c) == t})
+                           for t, name in SUBJECTS.items()},
     "scale_alphas": alphas,
     "unmapped_labels": unmapped_report,
     "anketa_missing_rate": {c: round(float(df[c].isna().mean()), 4)

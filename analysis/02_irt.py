@@ -10,7 +10,7 @@ import re
 import numpy as np
 import pandas as pd
 
-from common import OUT, DOMAINS, GROUP_ORDER, cronbach_alpha
+from common import OUT, DOMAINS, GROUP_ORDER, SUBJECTS, cronbach_alpha, subject_of
 import irt
 
 students = pd.read_csv(OUT / "students.csv")
@@ -35,16 +35,21 @@ def run_scale(cols, tag):
     return dict(b=b, sigma=sigma, theta=theta, se=se, score=score, infit=infit,
                 outfit=outfit, pb=pb, alpha=alpha, rel=rel_wle, n_it=n_it, cols=cols)
 
-# ------------------------------------------------- загальна шкала і галузеві
+# ----------------------------------- загальна шкала, галузеві та предметні лінії
 runs = {"total": run_scale(item_cols, "Загальна")}
+labels = {"total": "Загальна"}
 for d, name in DOMAINS.items():
     runs[f"d{d}"] = run_scale([c for c in item_cols if c.startswith(d + ".")], name)
+    labels[f"d{d}"] = name
+for tag, name in SUBJECTS.items():
+    runs[f"s_{tag}"] = run_scale([c for c in item_cols if subject_of(c) == tag], name)
+    labels[f"s_{tag}"] = name
 
 for tag, r in runs.items():
     students[f"score_{tag}"] = r["score"]
     students[f"theta_{tag}"] = r["theta"]
     students[f"se_{tag}"] = r["se"]
-    label = "Загальна" if tag == "total" else DOMAINS[tag[1]]
+    label = labels[tag]
     report["scales"][tag] = {
         "label": label,
         "n_items": len(r["cols"]),
@@ -65,6 +70,7 @@ for j, c in enumerate(item_cols):
     report["items"].append({
         "item": c,
         "domain": DOMAINS[d],
+        "subject": SUBJECTS[subject_of(c)],
         "task": re.sub(r"_\d\d$", "", c),
         "p_value": round(float(X[:, j].mean()), 3),
         "difficulty_b": round(float(tot["b"][j]), 3),

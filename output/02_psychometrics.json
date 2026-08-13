@@ -54,12 +54,68 @@
       "sd_theta": 1.402,
       "mean_se": 0.536,
       "em_iterations": 16
+    },
+    "s_read": {
+      "label": "Читання",
+      "n_items": 16,
+      "alpha": 0.54,
+      "reliability_wle": 0.515,
+      "sigma_population": 0.71,
+      "mean_pct": 43.5,
+      "sd_theta": 0.934,
+      "mean_se": 0.647,
+      "em_iterations": 36
+    },
+    "s_lit": {
+      "label": "Література",
+      "n_items": 17,
+      "alpha": 0.686,
+      "reliability_wle": 0.655,
+      "sigma_population": 0.796,
+      "mean_pct": 51.74,
+      "sd_theta": 0.972,
+      "mean_se": 0.562,
+      "em_iterations": 24
+    },
+    "s_math": {
+      "label": "Математика",
+      "n_items": 21,
+      "alpha": 0.744,
+      "reliability_wle": 0.724,
+      "sigma_population": 0.852,
+      "mean_pct": 54.5,
+      "sd_theta": 1.001,
+      "mean_se": 0.519,
+      "em_iterations": 19
+    },
+    "s_sci": {
+      "label": "Природничі",
+      "n_items": 25,
+      "alpha": 0.852,
+      "reliability_wle": 0.823,
+      "sigma_population": 1.113,
+      "mean_pct": 54.47,
+      "sd_theta": 1.228,
+      "mean_se": 0.496,
+      "em_iterations": 15
+    },
+    "s_hist": {
+      "label": "Історія",
+      "n_items": 24,
+      "alpha": 0.882,
+      "reliability_wle": 0.845,
+      "sigma_population": 1.332,
+      "mean_pct": 55.43,
+      "sd_theta": 1.402,
+      "mean_se": 0.536,
+      "em_iterations": 16
     }
   },
   "items": [
     {
       "item": "1.01_R216Q03T_01",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.01_R216Q03T",
       "p_value": 0.03,
       "difficulty_b": 3.909,
@@ -70,6 +126,7 @@
     {
       "item": "1.01_R216Q03T_02",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.01_R216Q03T",
       "p_value": 0.057,
       "difficulty_b": 3.22,
@@ -80,6 +137,7 @@
     {
       "item": "1.01_R216Q03T_03",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.01_R216Q03T",
       "p_value": 0.031,
       "difficulty_b": 3.885,
@@ -90,6 +148,7 @@
     {
       "item": "1.01_R216Q03T_04",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.01_R216Q03T",
       "p_value": 0.041,
       "difficulty_b": 3.591,
@@ -100,6 +159,7 @@
     {
       "item": "1.02_R216Q07N",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.02_R216Q07N",
       "p_value": 0.641,
       "difficulty_b": -0.602,
@@ -110,6 +170,7 @@
     {
       "item": "1.03_R216Q08N",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.03_R216Q08N",
       "p_value": 0.738,
       "difficulty_b": -1.113,
@@ -120,6 +181,7 @@
     {
       "item": "1.04_R216Q01O",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.04_R216Q01O",
       "p_value": 0.69,
       "difficulty_b": -0.852,
@@ -130,6 +192,7 @@
     {
       "item": "1.05_R216Q02T",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.05_R216Q02T",
       "p_value": 0.378,
       "difficulty_b": 0.65,
@@ -140,6 +203,7 @@
     {
       "item": "1.06_R216Q09N",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.06_R216Q09N",
       "p_value": 0.459,
       "difficulty_b": 0.261,
@@ -150,6 +214,7 @@
     {
       "item": "1.07_R216Q06O",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.07_R216Q06O",
       "p_value": 0.565,
       "difficulty_b": -0.235,
@@ -160,6 +225,7 @@
     {
       "item": "1.08_R216Q10N",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.08_R216Q10N",
       "p_value": 0.323,
       "difficulty_b": 0.935,
@@ -170,6 +236,7 @@
     {
       "item": "1.09_R216Q04T",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.09_R216Q04T",
       "p_value": 0.599,
       "difficulty_b": -0.392,
@@ -180,6 +247,7 @@
     {
       "item": "1.10_R216Q11N",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.10_R216Q11N",
       "p_value": 0.288,
       "difficulty_b": 1.123,
@@ -190,6 +258,7 @@
     {
       "item": "1.11_R216Q12N",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.11_R216Q12N",
       "p_value": 0.682,
       "difficulty_b": -0.808,
@@ -200,6 +269,7 @@
     {
       "item": "1.12_L216Q13N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.12_L216Q13N",
       "p_value": 0.682,
       "difficulty_b": -0.806,
@@ -210,6 +280,7 @@
     {
       "item": "1.13_L216Q14N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.13_L216Q14N",
       "p_value": 0.45,
       "difficulty_b": 0.305,
@@ -220,6 +291,7 @@
     {
       "item": "1.14_L216Q15N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.14_L216Q15N",
       "p_value": 0.33,
       "difficulty_b": 0.896,
@@ -230,6 +302,7 @@
     {
       "item": "1.15_L216Q16N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.15_L216Q16N",
       "p_value": 0.518,
       "difficulty_b": -0.013,
@@ -240,6 +313,7 @@
     {
       "item": "1.16_L081Q02N_01",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.16_L081Q02N",
       "p_value": 0.881,
       "difficulty_b": -2.173,
@@ -250,6 +324,7 @@
     {
       "item": "1.16_L081Q02N_02",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.16_L081Q02N",
       "p_value": 0.522,
       "difficulty_b": -0.031,
@@ -260,6 +335,7 @@
     {
       "item": "1.16_L081Q02N_03",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.16_L081Q02N",
       "p_value": 0.532,
       "difficulty_b": -0.078,
@@ -270,6 +346,7 @@
     {
       "item": "1.16_L081Q02N_04",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.16_L081Q02N",
       "p_value": 0.379,
       "difficulty_b": 0.645,
@@ -280,6 +357,7 @@
     {
       "item": "1.16_L081Q02N_05",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.16_L081Q02N",
       "p_value": 0.558,
       "difficulty_b": -0.2,
@@ -290,6 +368,7 @@
     {
       "item": "1.16_L081Q02N_06",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.16_L081Q02N",
       "p_value": 0.548,
       "difficulty_b": -0.153,
@@ -300,6 +379,7 @@
     {
       "item": "1.17_R081Q01O",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.17_R081Q01O",
       "p_value": 0.832,
       "difficulty_b": -1.739,
@@ -310,6 +390,7 @@
     {
       "item": "1.18_R081Q05T",
       "domain": "Мовно-літературна",
+      "subject": "Читання",
       "task": "1.18_R081Q05T",
       "p_value": 0.604,
       "difficulty_b": -0.421,
@@ -320,6 +401,7 @@
     {
       "item": "1.19_L081Q03N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.19_L081Q03N",
       "p_value": 0.575,
       "difficulty_b": -0.281,
@@ -330,6 +412,7 @@
     {
       "item": "1.20_L081Q04N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.20_L081Q04N",
       "p_value": 0.554,
       "difficulty_b": -0.181,
@@ -340,6 +423,7 @@
     {
       "item": "1.21_L081Q06N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.21_L081Q06N",
       "p_value": 0.645,
       "difficulty_b": -0.621,
@@ -350,6 +434,7 @@
     {
       "item": "1.22_L081Q07N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.22_L081Q07N",
       "p_value": 0.268,
       "difficulty_b": 1.239,
@@ -360,6 +445,7 @@
     {
       "item": "1.23_L081Q08N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.23_L081Q08N",
       "p_value": 0.521,
       "difficulty_b": -0.026,
@@ -370,6 +456,7 @@
     {
       "item": "1.24_L081Q09N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.24_L081Q09N",
       "p_value": 0.495,
       "difficulty_b": 0.093,
@@ -380,6 +467,7 @@
     {
       "item": "1.25_L081Q10N",
       "domain": "Мовно-літературна",
+      "subject": "Література",
       "task": "1.25_L081Q10N",
       "p_value": 0.336,
       "difficulty_b": 0.865,
@@ -390,6 +478,7 @@
     {
       "item": "2.01_PM985Q01O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.01_PM985Q01O",
       "p_value": 0.844,
       "difficulty_b": -1.83,
@@ -400,6 +489,7 @@
     {
       "item": "2.02_PM985Q02O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.02_PM985Q02O",
       "p_value": 0.652,
       "difficulty_b": -0.652,
@@ -410,6 +500,7 @@
     {
       "item": "2.03_PM985Q04N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.03_PM985Q04N",
       "p_value": 0.502,
       "difficulty_b": 0.06,
@@ -420,6 +511,7 @@
     {
       "item": "2.04_PM985Q03T",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.04_PM985Q03T",
       "p_value": 0.635,
       "difficulty_b": -0.57,
@@ -430,6 +522,7 @@
     {
       "item": "2.05_PM985Q05N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.05_PM985Q05N",
       "p_value": 0.383,
       "difficulty_b": 0.626,
@@ -440,6 +533,7 @@
     {
       "item": "2.06_PM985Q06N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.06_PM985Q06N",
       "p_value": 0.358,
       "difficulty_b": 0.752,
@@ -450,6 +544,7 @@
     {
       "item": "2.07_M159Q01O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.07_M159Q01O",
       "p_value": 0.704,
       "difficulty_b": -0.926,
@@ -460,6 +555,7 @@
     {
       "item": "2.08_M159Q02O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.08_M159Q02O",
       "p_value": 0.826,
       "difficulty_b": -1.69,
@@ -470,6 +566,7 @@
     {
       "item": "2.09_M159Q03O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.09_M159Q03O",
       "p_value": 0.805,
       "difficulty_b": -1.541,
@@ -480,6 +577,7 @@
     {
       "item": "2.10_M159Q04O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.10_M159Q04O",
       "p_value": 0.227,
       "difficulty_b": 1.493,
@@ -490,6 +588,7 @@
     {
       "item": "2.11_M159Q05N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.11_M159Q05N",
       "p_value": 0.386,
       "difficulty_b": 0.611,
@@ -500,6 +599,7 @@
     {
       "item": "2.12_PM923Q01O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.12_PM923Q01O",
       "p_value": 0.627,
       "difficulty_b": -0.529,
@@ -510,6 +610,7 @@
     {
       "item": "2.13_PM923Q03O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.13_PM923Q03O",
       "p_value": 0.532,
       "difficulty_b": -0.076,
@@ -520,6 +621,7 @@
     {
       "item": "2.14_PM923Q02N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.14_PM923Q02N",
       "p_value": 0.469,
       "difficulty_b": 0.217,
@@ -530,6 +632,7 @@
     {
       "item": "2.15_PM923Q05N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.15_PM923Q05N",
       "p_value": 0.606,
       "difficulty_b": -0.427,
@@ -540,6 +643,7 @@
     {
       "item": "2.16_PM923Q04O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.16_PM923Q04O",
       "p_value": 0.382,
       "difficulty_b": 0.633,
@@ -550,6 +654,7 @@
     {
       "item": "2.17_PM923Q06N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.17_PM923Q06N",
       "p_value": 0.346,
       "difficulty_b": 0.812,
@@ -560,6 +665,7 @@
     {
       "item": "2.18_PM934Q01T",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.18_PM934Q01T",
       "p_value": 0.57,
       "difficulty_b": -0.255,
@@ -570,6 +676,7 @@
     {
       "item": "2.19_PM934Q03N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.19_PM934Q03N",
       "p_value": 0.425,
       "difficulty_b": 0.425,
@@ -580,6 +687,7 @@
     {
       "item": "2.20_PM934Q02O",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.20_PM934Q02O",
       "p_value": 0.418,
       "difficulty_b": 0.46,
@@ -590,6 +698,7 @@
     {
       "item": "2.21_PM934Q04N",
       "domain": "Математична",
+      "subject": "Математика",
       "task": "2.21_PM934Q04N",
       "p_value": 0.749,
       "difficulty_b": -1.177,
@@ -600,6 +709,7 @@
     {
       "item": "3.01_S253Q01N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.01_S253Q01N",
       "p_value": 0.653,
       "difficulty_b": -0.657,
@@ -610,6 +720,7 @@
     {
       "item": "3.02_S253Q03N_01",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.02_S253Q03N",
       "p_value": 0.671,
       "difficulty_b": -0.753,
@@ -620,6 +731,7 @@
     {
       "item": "3.02_S253Q03N_02",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.02_S253Q03N",
       "p_value": 0.423,
       "difficulty_b": 0.431,
@@ -630,6 +742,7 @@
     {
       "item": "3.03_S253Q04N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.03_S253Q04N",
       "p_value": 0.48,
       "difficulty_b": 0.166,
@@ -640,6 +753,7 @@
     {
       "item": "3.04_S253Q02O",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.04_S253Q02O",
       "p_value": 0.54,
       "difficulty_b": -0.114,
@@ -650,6 +764,7 @@
     {
       "item": "3.05_S253Q06N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.05_S253Q06N",
       "p_value": 0.466,
       "difficulty_b": 0.228,
@@ -660,6 +775,7 @@
     {
       "item": "3.06_S253Q07N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.06_S253Q07N",
       "p_value": 0.725,
       "difficulty_b": -1.042,
@@ -670,6 +786,7 @@
     {
       "item": "3.07_S253Q08N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.07_S253Q08N",
       "p_value": 0.696,
       "difficulty_b": -0.883,
@@ -680,6 +797,7 @@
     {
       "item": "3.08_S253Q05Т",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.08_S253Q05Т",
       "p_value": 0.797,
       "difficulty_b": -1.481,
@@ -690,6 +808,7 @@
     {
       "item": "3.09_S253Q09N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.09_S253Q09N",
       "p_value": 0.54,
       "difficulty_b": -0.117,
@@ -700,6 +819,7 @@
     {
       "item": "3.10_S253Q10N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.10_S253Q10N",
       "p_value": 0.418,
       "difficulty_b": 0.46,
@@ -710,6 +830,7 @@
     {
       "item": "3.11_S253Q11N_01",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.11_S253Q11N",
       "p_value": 0.747,
       "difficulty_b": -1.168,
@@ -720,6 +841,7 @@
     {
       "item": "3.11_S253Q11N_02",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.11_S253Q11N",
       "p_value": 0.368,
       "difficulty_b": 0.703,
@@ -730,6 +852,7 @@
     {
       "item": "3.12_S253Q12N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.12_S253Q12N",
       "p_value": 0.426,
       "difficulty_b": 0.42,
@@ -740,6 +863,7 @@
     {
       "item": "3.13_S253Q13N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.13_S253Q13N",
       "p_value": 0.454,
       "difficulty_b": 0.286,
@@ -750,6 +874,7 @@
     {
       "item": "3.14_S253Q14N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.14_S253Q14N",
       "p_value": 0.337,
       "difficulty_b": 0.861,
@@ -760,6 +885,7 @@
     {
       "item": "3.15_S253Q15N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.15_S253Q15N",
       "p_value": 0.572,
       "difficulty_b": -0.264,
@@ -770,6 +896,7 @@
     {
       "item": "3.16_S447Q02O",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.16_S447Q02O",
       "p_value": 0.35,
       "difficulty_b": 0.795,
@@ -780,6 +907,7 @@
     {
       "item": "3.17_S447Q01N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.17_S447Q01N",
       "p_value": 0.695,
       "difficulty_b": -0.876,
@@ -790,6 +918,7 @@
     {
       "item": "3.18_S447Q03O",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.18_S447Q03O",
       "p_value": 0.464,
       "difficulty_b": 0.238,
@@ -800,6 +929,7 @@
     {
       "item": "3.19_S447Q04O",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.19_S447Q04O",
       "p_value": 0.539,
       "difficulty_b": -0.112,
@@ -810,6 +940,7 @@
     {
       "item": "3.20_S447Q02N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.20_S447Q02N",
       "p_value": 0.627,
       "difficulty_b": -0.531,
@@ -820,6 +951,7 @@
     {
       "item": "3.21_S447Q05Т",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.21_S447Q05Т",
       "p_value": 0.372,
       "difficulty_b": 0.682,
@@ -830,6 +962,7 @@
     {
       "item": "3.22_S447Q06N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.22_S447Q06N",
       "p_value": 0.547,
       "difficulty_b": -0.148,
@@ -840,6 +973,7 @@
     {
       "item": "3.23_S447Q07N",
       "domain": "Природнича",
+      "subject": "Природничі",
       "task": "3.23_S447Q07N",
       "p_value": 0.71,
       "difficulty_b": -0.957,
@@ -850,6 +984,7 @@
     {
       "item": "4.01_H001Q01N_01",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.01_H001Q01N",
       "p_value": 0.549,
       "difficulty_b": -0.159,
@@ -860,6 +995,7 @@
     {
       "item": "4.01_H001Q01N_02",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.01_H001Q01N",
       "p_value": 0.451,
       "difficulty_b": 0.301,
@@ -870,6 +1006,7 @@
     {
       "item": "4.01_H001Q01N_03",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.01_H001Q01N",
       "p_value": 0.522,
       "difficulty_b": -0.034,
@@ -880,6 +1017,7 @@
     {
       "item": "4.01_H001Q01N_04",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.01_H001Q01N",
       "p_value": 0.54,
       "difficulty_b": -0.114,
@@ -890,6 +1028,7 @@
     {
       "item": "4.01_H001Q01N_05",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.01_H001Q01N",
       "p_value": 0.497,
       "difficulty_b": 0.086,
@@ -900,6 +1039,7 @@
     {
       "item": "4.02_H001Q02N_01",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.02_H001Q02N",
       "p_value": 0.109,
       "difficulty_b": 2.471,
@@ -910,6 +1050,7 @@
     {
       "item": "4.02_H001Q02N_02",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.02_H001Q02N",
       "p_value": 0.637,
       "difficulty_b": -0.579,
@@ -920,6 +1061,7 @@
     {
       "item": "4.02_H001Q02N_03",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.02_H001Q02N",
       "p_value": 0.089,
       "difficulty_b": 2.718,
@@ -930,6 +1072,7 @@
     {
       "item": "4.02_H001Q02N_04",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.02_H001Q02N",
       "p_value": 0.512,
       "difficulty_b": 0.015,
@@ -940,6 +1083,7 @@
     {
       "item": "4.03_H001Q03N_01",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.03_H001Q03N",
       "p_value": 0.613,
       "difficulty_b": -0.463,
@@ -950,6 +1094,7 @@
     {
       "item": "4.03_H001Q03N_02",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.03_H001Q03N",
       "p_value": 0.619,
       "difficulty_b": -0.492,
@@ -960,6 +1105,7 @@
     {
       "item": "4.03_H001Q03N_03",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.03_H001Q03N",
       "p_value": 0.626,
       "difficulty_b": -0.524,
@@ -970,6 +1116,7 @@
     {
       "item": "4.04_H001Q04N_01",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.04_H001Q04N",
       "p_value": 0.806,
       "difficulty_b": -1.548,
@@ -980,6 +1127,7 @@
     {
       "item": "4.04_H001Q04N_02",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.04_H001Q04N",
       "p_value": 0.6,
       "difficulty_b": -0.399,
@@ -990,6 +1138,7 @@
     {
       "item": "4.04_H001Q04N_03",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.04_H001Q04N",
       "p_value": 0.616,
       "difficulty_b": -0.478,
@@ -1000,6 +1149,7 @@
     {
       "item": "4.05_H001Q05N_01",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.05_H001Q05N",
       "p_value": 0.708,
       "difficulty_b": -0.945,
@@ -1010,6 +1160,7 @@
     {
       "item": "4.05_H001Q05N_02",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.05_H001Q05N",
       "p_value": 0.494,
       "difficulty_b": 0.099,
@@ -1020,6 +1171,7 @@
     {
       "item": "4.05_H001Q05N_03",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.05_H001Q05N",
       "p_value": 0.628,
       "difficulty_b": -0.534,
@@ -1030,6 +1182,7 @@
     {
       "item": "4.06_H001Q06N",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.06_H001Q06N",
       "p_value": 0.675,
       "difficulty_b": -0.771,
@@ -1040,6 +1193,7 @@
     {
       "item": "4.07_H001Q07N",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.07_H001Q07N",
       "p_value": 0.524,
       "difficulty_b": -0.042,
@@ -1050,6 +1204,7 @@
     {
       "item": "4.08_H001Q08N",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.08_H001Q08N",
       "p_value": 0.718,
       "difficulty_b": -1.003,
@@ -1060,6 +1215,7 @@
     {
       "item": "4.09_H001Q09N",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.09_H001Q09N",
       "p_value": 0.661,
       "difficulty_b": -0.7,
@@ -1070,6 +1226,7 @@
     {
       "item": "4.10_H001Q10N",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.10_H001Q10N",
       "p_value": 0.65,
       "difficulty_b": -0.645,
@@ -1080,6 +1237,7 @@
     {
       "item": "4.11_H001Q11N",
       "domain": "Громадянсько-історична",
+      "subject": "Історія",
       "task": "4.11_H001Q11N",
       "p_value": 0.459,
       "difficulty_b": 0.264,

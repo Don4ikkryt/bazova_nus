@@ -709,6 +709,59 @@ li{margin-bottom:9px}
     методом Бенджаміні–Хохберга.</figcaption>
   </figure>
 
+  <div class="col">
+    <h3>Те саме по предметах</h3>
+    <p>Галузь — ще не предмет: мовно-літературна охоплює і роботу з текстом, і літературу.
+    Предметної розмітки завдань у даних немає, але код кожної позиції містить номер блоку,
+    а блок будується навколо одного матеріалу — суцільного тексту, літературного твору,
+    математичної ситуації, природничого опису, історичного джерела. За цими кодами тест
+    розпадається на п'ять предметних ліній. Дрібніше — біологія проти фізики, алгебра проти
+    геометрії — дані не діляться: усередині природничої лінії всі
+    <span data-num="01_meta.items_per_subject.Природничі" data-dec="0"></span> позицій належать
+    двом блокам без позначки предмета.</p>
+  </div>
+
+  <figure>
+    <div class="figbox">
+      <div class="figtitle">І по кожній із п'яти предметних ліній</div>
+      <div class="figsub">Ефект у стандартних відхиленнях</div>
+      <div class="legend">
+        <span><i class="swatch" style="background:var(--s1)"></i>Сходинка 2 — між школами пари</span>
+        <span><i class="swatch" style="background:var(--s2)"></i>Сходинка 3 — усередині школи</span>
+      </div>
+      <div id="chart-subjects"></div>
+    </div>
+    <figcaption><b>Як це читати.</b> Дрібніший поділ нічого не перевертає: між школами пари
+    перевага пілоту є в усіх п'яти лініях, усередині школи — нуль в усіх п'яти. Але величина
+    різниться вдвічі: найменша вона в роботі з текстом і літературі
+    (<span data-num="05_effects.by_subject.Читання.2_pair_fe.sigma" data-dec="2"></span> і
+    <span data-num="05_effects.by_subject.Література.2_pair_fe.sigma" data-dec="2"></span>&nbsp;σ),
+    найбільша — у природничих і історії (по
+    <span data-num="05_effects.by_subject.Історія.2_pair_fe.sigma" data-dec="2"></span>&nbsp;σ).
+    Значення p скориговані методом Бенджаміні–Хохберга окремо для цих п'яти
+    порівнянь.</figcaption>
+  </figure>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Предметна лінія</th><th class="num">Позицій</th>
+      <th class="num">Непілотна школа</th><th class="num">Пілотний клас</th>
+      <th class="num" style="text-transform:none">Сходинка 2, σ</th>
+      <th class="num" style="text-transform:none">Сходинка 3, σ</th>
+      <th class="num" style="text-transform:none">α</th></tr></thead>
+      <tbody id="tbl-subjects"></tbody>
+    </table>
+  </div>
+  <p class="col" style="font-size:15px;color:var(--muted)">Остання колонка — надійність самої
+  лінії. Що коротша шкала й що різнорідніший матеріал у ній, то нижча α, і то обережніше треба
+  читати відповідний рядок. Найслабша — читацька лінія
+  (α&nbsp;=&nbsp;<span data-num="02_psychometrics.scales.s_read.alpha" data-dec="2"></span> на
+  <span data-num="01_meta.items_per_subject.Читання" data-dec="0"></span> позиціях із двох
+  різних текстів), тож її число з-поміж усіх найменш стійке. Порівнювати лінії між собою за
+  середнім балом не можна: кожну шкалу центровано на 500 окремо, тож 500&nbsp;балів у читанні
+  й 500 в історії — це різні рівні знань, а не однаковий. Порівнювати можна тільки групи
+  всередині одного рядка.</p>
+
   <figure>
     <div class="figbox">
       <div class="figtitle">Кожна з 50 пар шкіл окремо</div>
@@ -1274,9 +1327,13 @@ li{margin-bottom:9px}
           <tbody id="tbl-psy2"></tbody></table>
         </div>
 
-        <p style="margin-top:22px"><b>Надійність загальної та галузевих шкал.</b> Галузеві
-        шкали слабші за загальну, бо в кожній менше завдань, тож галузеві порівняння варто
-        читати обережніше.</p>
+        <p style="margin-top:22px"><b>Надійність загальної, галузевих і предметних шкал.</b>
+        Кожну шкалу відкалібровано окремо на своїх позиціях і центровано на 500, тож середні
+        бали різних шкал між собою не зіставні. Часткові шкали слабші за загальну, бо в кожній
+        менше завдань, тож і галузеві, і предметні порівняння варто читати обережніше.
+        Предметні лінії відновлено з коду блоку завдань у коді позиції: R&nbsp;— суцільний
+        текст, L&nbsp;— літературний твір, PM і M&nbsp;— математика, S&nbsp;— природничі,
+        H&nbsp;— історія. Предметної розмітки завдань у вихідних даних немає.</p>
         <div class="tablewrap" style="margin-top:14px">
           <table>
             <thead><tr><th>Шкала</th><th class="num">Позицій</th><th class="num">Середній % правильних</th>
@@ -1550,6 +1607,35 @@ function td(t, cls) { const d = document.createElement("td"); d.textContent = t;
     const first = document.createElement("td");
     first.innerHTML = `<span class="swatch" style="display:inline-block;background:var(${GCOL[k]});margin-right:8px"></span>${k}`;
     tr.append(first, td(v.n, "num"), td(uk(v.mean, 1), "num"), td(uk(v.pct, 1) + " %", "num"), td(uk(v.sd, 1), "num"));
+    b.append(tr);
+  });
+})();
+
+(function subjects() {
+  const b = document.getElementById("tbl-subjects");
+  const E = D["05_effects"].by_subject;
+  const G = D["04_descriptive"].by_group;
+  const S = D["02_psychometrics"].scales;
+  // порядок рядків беремо зі шкал: він же задає відповідність мітки й тега шкали
+  const tags = Object.entries(S).filter(([k]) => k.startsWith("s_"));
+  tags.forEach(([tag, sc]) => {
+    const e = E[sc.label], g = G["score_" + tag];
+    const tr = document.createElement("tr");
+    tr.append(td(sc.label), td(sc.n_items, "num"),
+      td(uk(g["Непілотна школа"].mean, 1), "num"),
+      td(uk(g["Пілотний клас"].mean, 1), "num"));
+    ["2_pair_fe", "3_school_fe"].forEach(k => {
+      const v = e[k];
+      const c = document.createElement("td");
+      c.className = "num";
+      c.innerHTML = `${sgn(v.sigma, 2)} <span class="pill ${v.p_bh < 0.05 ? "pill-y" : "pill-n"}">${
+        v.p_bh < 0.001 ? "p < 0,001" : "p = " + uk(v.p_bh, 3)}</span>`;
+      if (v.p_bh >= 0.05) c.style.color = css("--muted");
+      tr.append(c);
+    });
+    const a = td(uk(sc.alpha, 2), "num");
+    if (sc.alpha < 0.7) a.style.color = css("--muted");
+    tr.append(a);
     b.append(tr);
   });
 })();
@@ -2108,11 +2194,12 @@ chart("chart-ladder", box => {
   box.appendChild(s);
 });
 
-/* ---------- галузі */
-chart("chart-domains", box => {
-  const bd = D["05_effects"].by_domain;
+/* ---------- галузі та предметні лінії: один графік на двох розрізах */
+function effectChart(id, bucket, h) {
+chart(id, box => {
+  const bd = D["05_effects"][bucket];
   const names = Object.keys(bd);
-  const w = 720, h = 250, m = {t: 20, r: 60, b: 38, l: 200};
+  const w = 720, m = {t: 20, r: 60, b: 38, l: 200};
   const s = mk(w, h);
   const lim = 0.5;
   const x = v => m.l + (v + lim) / (2 * lim) * (w - m.l - m.r);
@@ -2140,6 +2227,9 @@ chart("chart-domains", box => {
   });
   box.appendChild(s);
 });
+}
+effectChart("chart-domains", "by_domain", 250);
+effectChart("chart-subjects", "by_subject", 298);
 
 /* ---------- 50 пар */
 chart("chart-pairs", box => {
